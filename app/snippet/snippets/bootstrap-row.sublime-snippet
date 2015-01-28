@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[<!-- BEGIN ROW  -->
+<div class="row ${1}">
+	${2}
+</div>
+<!-- END ROW  -->
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>row</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description>row bootstrap</description>
+	<category>bootstrap</category>
+</snippet>
+
+
+

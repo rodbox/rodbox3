@@ -1,0 +1,16 @@
+{
+	"index":{
+		
+        "js":{
+        	"colors":[
+        		"app",
+        		"jquery-formpng"
+        	]
+        },
+        "css":{
+        	"colors":[
+        		"style"
+        	]
+        }
+	}
+}

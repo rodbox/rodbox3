@@ -1,0 +1,22 @@
+{
+    "colors_page_index": [
+        "colors",
+        "index",
+        "page"
+    ],
+    "colors_exec_export-palette": [
+        "colors",
+        "export-palette",
+        "exec"
+    ],
+    "colors_exec_png-palette": [
+        "colors",
+        "png-palette",
+        "exec"
+    ],
+    "colors_exec_save-palette": [
+        "colors",
+        "save-palette",
+        "exec"
+    ]
+}

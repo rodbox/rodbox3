@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[if(window.navigator.standalone){
+	if (localStorage.session == "true") {
+		var data = {
+		 	user: {
+		   		id 	: localStorage.id,
+		    		user	: localStorage.user,
+		   		name	: localStorage.user,
+			}
+		}
+}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>standalone</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description>condition standalone</description>
+	<category>javascript</category>
+</snippet>
+
+
+

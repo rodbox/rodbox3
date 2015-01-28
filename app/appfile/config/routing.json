@@ -1,0 +1,37 @@
+{
+    "appfile_page_index": [
+        "appfile",
+        "index",
+        "page"
+    ],
+    "appfile_exec_create-app": [
+        "appfile",
+        "create-app",
+        "exec"
+    ],
+    "appfile_exec_create": [
+        "appfile",
+        "create",
+        "exec"
+    ],
+    "appfile_exec_edit": [
+        "appfile",
+        "edit",
+        "exec"
+    ],
+    "appfile_exec_list": [
+        "appfile",
+        "list",
+        "exec"
+    ],
+    "appfile_exec_remove": [
+        "appfile",
+        "remove",
+        "exec"
+    ],
+    "appfile_exec_save": [
+        "appfile",
+        "save",
+        "exec"
+    ]
+}

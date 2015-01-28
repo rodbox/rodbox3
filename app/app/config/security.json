@@ -1,0 +1,6 @@
+{
+	"MASTER"	: ["MASTER","ADMIN","USER","FREE"],
+	"ADMIN"		: ["ADMIN","USER","FREE"],
+	"USER"		: ["USER","FREE"],
+	"FREE"		: ["FREE"]
+}

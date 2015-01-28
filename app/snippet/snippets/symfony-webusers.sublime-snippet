@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[\$web_users = \$this->container->getParameter('web_users');]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>webusers</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>php</scope>
+	<description>symfony : web user depuis le fichier app/config/parameters.yml</description>
+	<category>symfony</category>
+</snippet>
+
+
+

@@ -1,0 +1,188 @@
+.snippets-list li:before{
+	font-family: "Glyphicons Halflings";
+	content:"\e165";
+	font-size: 0.5em;
+	float: right;
+	line-height: 4.2em;
+	margin-right: 10px;
+}
+/*** all ***/
+.snippets-list li[id^="*-"]:before{color: #000;}
+.snippets-list li[id^="*-"].onChecked{background-color: rgba(0,0,0,0.2) !important;}
+.snippets-list li[id^="*-"].onFocus.onChecked{background-color: rgba(0,0,0,0.1) !important;}
+.snippets-list li[id^="*-"].onFocus.onOpen{background-color: rgba(0,0,0,0.7) !important;}
+.snippets-list li[id^="*-"].onOpen{background-color: #000 !important;}
+.c-cat-color-all{color: #000;}
+.bg-cat-color-all{background-color: #000;}
+
+/*** html ***/
+.snippets-list li[id^="html-"]:before{color: #4e2472;}
+.snippets-list li[id^="html-"].onChecked{background-color: rgba(78,36,114,0.2) !important;}
+.snippets-list li[id^="html-"].onFocus.onChecked{background-color: rgba(78,36,114,0.1) !important;}
+.snippets-list li[id^="html-"].onFocus.onOpen{background-color: rgba(78,36,114,0.7) !important;}
+.snippets-list li[id^="html-"].onOpen{background-color: #4e2472 !important;}
+.c-cat-color-html{color: #4e2472;}
+.bg-cat-color-html{background-color: #4e2472;}
+
+/*** html ***/
+.snippets-list li[id^="zen-"]:before{color: #4e2472;}
+.snippets-list li[id^="zen-"].onChecked{background-color: rgba(78,36,114,0.2) !important;}
+.snippets-list li[id^="zen-"].onFocus.onChecked{background-color: rgba(78,36,114,0.1) !important;}
+.snippets-list li[id^="zen-"].onFocus.onOpen{background-color: rgba(78,36,114,0.7) !important;}
+.snippets-list li[id^="zen-"].onOpen{background-color: #4e2472 !important;}
+.c-cat-color-html{color: #4e2472;}
+.bg-cat-color-html{background-color: #4e2472;}
+
+/*** form ***/
+.snippets-list li[id^="form-"]:before{color: #e2975d;}
+.snippets-list li[id^="form-"].onChecked{background-color: rgba(226,151,93,0.2) !important;}
+.snippets-list li[id^="form-"].onFocus.onChecked{background-color: rgba(226,151,93,0.1) !important;}
+.snippets-list li[id^="form-"].onFocus.onOpen{background-color: rgba(226,151,93,0.7) !important;}
+.snippets-list li[id^="form-"].onOpen{background-color: #e2975d !important;}
+.c-cat-color-form{color: #e2975d;}
+.bg-cat-color-form{background-color: #e2975d;}
+
+/*** form ***/
+.snippets-list li[id^="attr-"]:before{color: #e2975d;}
+.snippets-list li[id^="attr-"].onChecked{background-color: rgba(226,151,93,0.2) !important;}
+.snippets-list li[id^="attr-"].onFocus.onChecked{background-color: rgba(226,151,93,0.1) !important;}
+.snippets-list li[id^="attr-"].onFocus.onOpen{background-color: rgba(226,151,93,0.7) !important;}
+.snippets-list li[id^="attr-"].onOpen{background-color: #e2975d !important;}
+.c-cat-color-form{color: #e2975d;}
+.bg-cat-color-form{background-color: #e2975d;}
+
+/*** color ***/
+.snippets-list li[id^="color-"]:before{color: #ccc;}
+.snippets-list li[id^="color-"].onChecked{background-color: rgba(204,204,204,0.2) !important;}
+.snippets-list li[id^="color-"].onFocus.onChecked{background-color: rgba(204,204,204,0.1) !important;}
+.snippets-list li[id^="color-"].onFocus.onOpen{background-color: rgba(204,204,204,0.7) !important;}
+.snippets-list li[id^="color-"].onOpen{background-color: #ccc !important;}
+.c-cat-color-color{color: #ccc;}
+.bg-cat-color-color{background-color: #ccc;}
+
+/*** php ***/
+.snippets-list li[id^="php-"]:before{color: #196ca7;}
+.snippets-list li[id^="php-"].onChecked{background-color: rgba(25,108,167,0.2) !important;}
+.snippets-list li[id^="php-"].onFocus.onChecked{background-color: rgba(25,108,167,0.1) !important;}
+.snippets-list li[id^="php-"].onFocus.onOpen{background-color: rgba(25,108,167,0.7) !important;}
+.snippets-list li[id^="php-"].onOpen{background-color: #196ca7 !important;}
+.c-cat-color-php{color: #196ca7;}
+.bg-cat-color-php{background-color: #196ca7;}
+
+/*** symfony ***/
+.snippets-list li[id^="symfony-"]:before{color: #74c493;}
+.snippets-list li[id^="symfony-"].onChecked{background-color: rgba(116,196,147,0.2) !important;}
+.snippets-list li[id^="symfony-"].onFocus.onChecked{background-color: rgba(116,196,147,0.1) !important;}
+.snippets-list li[id^="symfony-"].onFocus.onOpen{background-color: rgba(116,196,147,0.7) !important;}
+.snippets-list li[id^="symfony-"].onOpen{background-color: #74c493 !important;}
+.c-cat-color-symfony{color: #74c493;}
+.bg-cat-color-symfony{background-color: #74c493;}
+
+/*** bootstrap ***/
+.snippets-list li[id^="bootstrap-"]:before{color: #644B8C;}
+.snippets-list li[id^="bootstrap-"].onChecked{background-color: rgba(100,75,140,0.2) !important;}
+.snippets-list li[id^="bootstrap-"].onFocus.onChecked{background-color: rgba(100,75,140,0.1) !important;}
+.snippets-list li[id^="bootstrap-"].onFocus.onOpen{background-color: rgba(100,75,140,0.7) !important;}
+.snippets-list li[id^="bootstrap-"].onOpen{background-color: #644B8C !important;}
+.c-cat-color-bootstrap{color: #644B8C;}
+.bg-cat-color-bootstrap{background-color: #644B8C;}
+
+/*** javascript ***/
+.snippets-list li[id^="javascript-"]:before{color: #7c9fb0;}
+.snippets-list li[id^="javascript-"].onChecked{background-color: rgba(124,159,176,0.2) !important;}
+.snippets-list li[id^="javascript-"].onFocus.onChecked{background-color: rgba(124,159,176,0.1) !important;}
+.snippets-list li[id^="javascript-"].onFocus.onOpen{background-color: rgba(124,159,176,0.7) !important;}
+.snippets-list li[id^="javascript-"].onOpen{background-color: #7c9fb0 !important;}
+.c-cat-color-javascript{color: #7c9fb0;}
+.bg-cat-color-javascript{background-color: #7c9fb0;}
+
+/*** javascript ***/
+.snippets-list li[id^="js-"]:before{color: #7c9fb0;}
+.snippets-list li[id^="js-"].onChecked{background-color: rgba(124,159,176,0.2) !important;}
+.snippets-list li[id^="js-"].onFocus.onChecked{background-color: rgba(124,159,176,0.1) !important;}
+.snippets-list li[id^="js-"].onFocus.onOpen{background-color: rgba(124,159,176,0.7) !important;}
+.snippets-list li[id^="js-"].onOpen{background-color: #7c9fb0 !important;}
+.c-cat-color-javascript{color: #7c9fb0;}
+.bg-cat-color-javascript{background-color: #7c9fb0;}
+
+/*** javascript ***/
+.snippets-list li[id^="jquery-"]:before{color: #7c9fb0;}
+.snippets-list li[id^="jquery-"].onChecked{background-color: rgba(124,159,176,0.2) !important;}
+.snippets-list li[id^="jquery-"].onFocus.onChecked{background-color: rgba(124,159,176,0.1) !important;}
+.snippets-list li[id^="jquery-"].onFocus.onOpen{background-color: rgba(124,159,176,0.7) !important;}
+.snippets-list li[id^="jquery-"].onOpen{background-color: #7c9fb0 !important;}
+.c-cat-color-javascript{color: #7c9fb0;}
+.bg-cat-color-javascript{background-color: #7c9fb0;}
+
+/*** css ***/
+.snippets-list li[id^="css-"]:before{color: #e279a3;}
+.snippets-list li[id^="css-"].onChecked{background-color: rgba(226,121,163,0.2) !important;}
+.snippets-list li[id^="css-"].onFocus.onChecked{background-color: rgba(226,121,163,0.1) !important;}
+.snippets-list li[id^="css-"].onFocus.onOpen{background-color: rgba(226,121,163,0.7) !important;}
+.snippets-list li[id^="css-"].onOpen{background-color: #e279a3 !important;}
+.c-cat-color-css{color: #e279a3;}
+.bg-cat-color-css{background-color: #e279a3;}
+
+/*** css ***/
+.snippets-list li[id^="class-"]:before{color: #e279a3;}
+.snippets-list li[id^="class-"].onChecked{background-color: rgba(226,121,163,0.2) !important;}
+.snippets-list li[id^="class-"].onFocus.onChecked{background-color: rgba(226,121,163,0.1) !important;}
+.snippets-list li[id^="class-"].onFocus.onOpen{background-color: rgba(226,121,163,0.7) !important;}
+.snippets-list li[id^="class-"].onOpen{background-color: #e279a3 !important;}
+.c-cat-color-css{color: #e279a3;}
+.bg-cat-color-css{background-color: #e279a3;}
+
+/*** css ***/
+.snippets-list li[id^="less-"]:before{color: #e279a3;}
+.snippets-list li[id^="less-"].onChecked{background-color: rgba(226,121,163,0.2) !important;}
+.snippets-list li[id^="less-"].onFocus.onChecked{background-color: rgba(226,121,163,0.1) !important;}
+.snippets-list li[id^="less-"].onFocus.onOpen{background-color: rgba(226,121,163,0.7) !important;}
+.snippets-list li[id^="less-"].onOpen{background-color: #e279a3 !important;}
+.c-cat-color-css{color: #e279a3;}
+.bg-cat-color-css{background-color: #e279a3;}
+
+/*** md ***/
+.snippets-list li[id^="md-"]:before{color: #434343;}
+.snippets-list li[id^="md-"].onChecked{background-color: rgba(67,67,67,0.2) !important;}
+.snippets-list li[id^="md-"].onFocus.onChecked{background-color: rgba(67,67,67,0.1) !important;}
+.snippets-list li[id^="md-"].onFocus.onOpen{background-color: rgba(67,67,67,0.7) !important;}
+.snippets-list li[id^="md-"].onOpen{background-color: #434343 !important;}
+.c-cat-color-md{color: #434343;}
+.bg-cat-color-md{background-color: #434343;}
+
+/*** twig ***/
+.snippets-list li[id^="twig-"]:before{color: #e4bf80;}
+.snippets-list li[id^="twig-"].onChecked{background-color: rgba(228,191,128,0.2) !important;}
+.snippets-list li[id^="twig-"].onFocus.onChecked{background-color: rgba(228,191,128,0.1) !important;}
+.snippets-list li[id^="twig-"].onFocus.onOpen{background-color: rgba(228,191,128,0.7) !important;}
+.snippets-list li[id^="twig-"].onOpen{background-color: #e4bf80 !important;}
+.c-cat-color-twig{color: #e4bf80;}
+.bg-cat-color-twig{background-color: #e4bf80;}
+
+/*** metronic ***/
+.snippets-list li[id^="metro-"]:before{color: #c94a53;}
+.snippets-list li[id^="metro-"].onChecked{background-color: rgba(201,74,83,0.2) !important;}
+.snippets-list li[id^="metro-"].onFocus.onChecked{background-color: rgba(201,74,83,0.1) !important;}
+.snippets-list li[id^="metro-"].onFocus.onOpen{background-color: rgba(201,74,83,0.7) !important;}
+.snippets-list li[id^="metro-"].onOpen{background-color: #c94a53 !important;}
+.c-cat-color-metronic{color: #c94a53;}
+.bg-cat-color-metronic{background-color: #c94a53;}
+
+/*** rodbox ***/
+.snippets-list li[id^="rodbox-"]:before{color: #BFBDB5;}
+.snippets-list li[id^="rodbox-"].onChecked{background-color: rgba(191,189,181,0.2) !important;}
+.snippets-list li[id^="rodbox-"].onFocus.onChecked{background-color: rgba(191,189,181,0.1) !important;}
+.snippets-list li[id^="rodbox-"].onFocus.onOpen{background-color: rgba(191,189,181,0.7) !important;}
+.snippets-list li[id^="rodbox-"].onOpen{background-color: #BFBDB5 !important;}
+.c-cat-color-rodbox{color: #BFBDB5;}
+.bg-cat-color-rodbox{background-color: #BFBDB5;}
+
+/*** rodbox ***/
+.snippets-list li[id^="rb-"]:before{color: #BFBDB5;}
+.snippets-list li[id^="rb-"].onChecked{background-color: rgba(191,189,181,0.2) !important;}
+.snippets-list li[id^="rb-"].onFocus.onChecked{background-color: rgba(191,189,181,0.1) !important;}
+.snippets-list li[id^="rb-"].onFocus.onOpen{background-color: rgba(191,189,181,0.7) !important;}
+.snippets-list li[id^="rb-"].onOpen{background-color: #BFBDB5 !important;}
+.c-cat-color-rodbox{color: #BFBDB5;}
+.bg-cat-color-rodbox{background-color: #BFBDB5;}
+

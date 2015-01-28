@@ -1,0 +1,74 @@
+@import "import.less";
+
+body {
+	 background-image: url("../img/graphy.png");
+    .bgp;
+    .scroll-touch();
+    .bg-4;
+	width: 100%;
+    .line-9;
+
+    &.no-bgi{
+    	background-image: none !important;
+    }
+
+}
+
+#fullmsg{
+	height: 100% !important;
+	width: 100% !important;
+	position: fixed !important;
+
+	.opacity(0);
+	z-index: 1080;
+	.animate(1250,ease-in,1500);
+	.bg-4;
+	background-color: transparent;
+
+	&.outro{
+		.animate(650,ease-out);
+	}
+
+
+	&.open{
+		.opacity(1);
+	
+		& p {
+			.opacity(1);
+			top: calc(~"50% - 75px");
+			&.outro{
+				.animate(1000,ease,1150ms);
+				top: 75%;
+				.opacity(0);
+
+			}
+		}
+	}
+	& p{
+		.opacity(0);
+		.animate(1500,ease,1350ms);
+		text-align: center;
+		position: relative;
+
+		font-size: 3em;
+		top: 40%;
+		line-height: 100px;
+		vertical-align: middle;
+		.c-3;
+	}
+}
+
+#formLogin{
+-webkit-transition: all 1250ms cubic-bezier(0.810, 0, 0.740, 1); /* older webkit */
+-webkit-transition: all 1250ms cubic-bezier(0.810, -0.400, 0.740, 1.005);
+   -moz-transition: all 1250ms cubic-bezier(0.810, -0.400, 0.740, 1.005);
+     -o-transition: all 1250ms cubic-bezier(0.810, -0.400, 0.740, 1.005);
+        transition: all 1250ms cubic-bezier(0.810, -0.400, 0.740, 1.005); /* custom */
+	&.onLoad{
+		-moz-transform: translateX(0px) translateY(1500px);
+-webkit-transform: translateX(0px) translateY(1500px);
+-o-transform: translateX(0px) translateY(1500px);
+-ms-transform: translateX(0px) translateY(1500px);
+transform: translateX(0px) translateY(1500px);
+	}
+}

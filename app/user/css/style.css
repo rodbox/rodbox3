@@ -1,0 +1,23 @@
+label {
+  display: block;
+  margin-top: 15px;
+}
+input {
+  display: block;
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 100%;
+}
+input[type=submit] {
+  margin-bottom: 0px;
+}
+div.radio {
+  display: inline-table;
+  width: 65px;
+  margin: 0px;
+}
+.msg-info {
+  padding: 25px;
+  background-color: #ececec;
+  margin-bottom: 25px;
+}

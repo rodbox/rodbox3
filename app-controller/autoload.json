@@ -1,0 +1,166 @@
+{
+    "init":{
+        "mod" :[
+            "form",
+            "user",
+            "tool",
+            "error"
+        ],
+        "js":[
+            "http://code.jquery.com/jquery-2.1.1.min",
+            "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min",
+            "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min",
+            "http://static.rodbox.fr/spectrum/spectrum"
+        ],
+        "css":[
+            "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min",
+            "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min",
+            "http://fonts.googleapis.com/css?family=Open+Sans:400,300,700",
+            "http://static.rodbox.fr/spectrum/spectrum"
+        ],
+        "lib":[
+            "bootstrap-slider-master",
+            "mobile-events"
+
+        ]
+    },
+
+    "css": {
+    	"app":[
+    	   "jquery-appinfo",
+           "font-awesome/css/font-awesome",
+           "simple-line-icons/simple-line-icons.min",
+           "icomoon/style",
+           "style"
+        ]
+    },
+
+    "js":{
+        "app":[
+            "jquery-view",
+            "jquery-ui",
+            "jquery-appmobile",
+            "jquery-serializeobject",
+        	"jquery-appaltkey",
+        	"jquery-appinfo",
+        	"jquery-localsearch",
+            "jquery-appliveexec",
+        	"jquery-appliveform",
+            "app"
+        ],
+        "goparse":[
+            
+        ]
+    },
+
+    "lib":{
+        "tcpdf"     :{
+            "php"   :[
+                "class-mypdf"
+            ]
+        },
+        "lessphp"   : {
+            "doc"   : "http://leafo.net/lessphp/",
+            "php"   : [
+                "lessc.inc.php"
+            ]
+        },
+        "codemirror":{
+            "doc"   : "http://codemirror.net/doc/manual.html",
+            "css"   :[
+                "lib/codemirror",
+                "addon/hint/show-hint",
+                "theme/twilight",
+                "../../../app/app/css/codemirror-fix"
+            ],
+            "js"    :[
+                "lib/codemirror",
+                "addon/search/searchcursor",
+                "addon/search/search",
+                "addon/hint/show-hint",
+                "addon/hint/javascript-hint",
+                "addon/hint/css-hint",
+                "addon/hint/html-hint",
+                "addon/hint/xml-hint",
+                "addon/dialog/dialog",
+                "addon/edit/matchbrackets",
+                "addon/edit/closebrackets",
+                "addon/comment/comment",
+                "addon/wrap/hardwrap",
+                "addon/fold/foldcode",
+                "addon/fold/brace-fold",
+                "mode/htmlmixed/htmlmixed",
+                "mode/xml/xml",
+                "mode/clike/clike",
+                "mode/php/php",
+                "mode/css/css",
+                "mode/markdown/markdown",
+                "mode/javascript/javascript",
+                "keymap/sublime"
+            ]
+        },
+        "mobile-events":{
+            "doc"   : "https://github.com/benmajor/jQuery-Touch-Events",
+            "css"   :[],
+            "js"    :[
+                "jquery.mobile-events.min"
+            ]
+        },
+        "plupload":{
+            "doc"   : "http://www.plupload.com/docs/",
+            "css"   :[],
+            "js"    :[
+                "js/plupload.full.min",
+                "jquery-plupload",
+                "plupload-init"
+            ]
+        },
+        "paperjs":{
+            "doc"   : "http://paperjs.org/reference/global/",
+            "css"   :[],
+            "js"    :[
+                "dist/paper-full.min"
+            ]
+        },
+        "bootstrap-slider-master":{
+            "doc"   : "https://github.com/seiyria/bootstrap-slider",
+            "css"   : [
+                "css/bootstrap-slider"
+            ],
+            "js"    : [
+                "js/bootstrap-slider"
+            ]
+        },
+        "jquery-ui":{
+            "doc"   : "http://api.jqueryui.com/",
+            "css"   : [
+                "jquery-ui.min",
+                "jquery-ui.structure.min"
+            ],
+            "js"    : [
+                "jquery-ui.min"
+            ]
+            },
+        "spectrum":{
+           
+            "css"   : [
+                "spectrum"
+            ],
+            "js"    : [
+                "spectrum"
+            ]
+            },
+        "tinyMCE":{
+            "css"   :[],
+            "js"    :[]
+        },
+        "circleMenu":{
+            "css"   :[],
+            "js"    :[]
+        },
+        "apppad"    :{
+            "css"   :[],
+            "js"    :[]
+        }
+    }
+}

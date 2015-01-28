@@ -1,0 +1,127 @@
+/* FUNCTION LIST */
+
+/*** Z-INDEX ***/
+.z-root(@z:0) 	{ z-index : 200+@z !important;}
+.z-bg(@z:0) 	{ z-index : 300+@z !important;}
+.z-normal(@z:0) { z-index : 500+@z !important;}
+.z-overlay(@z:0){ z-index : 600+@z !important;}
+.z-max(@z:0) 	{ z-index : 1060+@z !important;}
+/*** Z-INDEX ***/
+
+.radius(@radius:50%){border-radius: @radius;}
+.opacity(@opacity:0.5;){
+    opacity: @opacity;
+}
+/* padding */
+.padv(@pad:5){
+	.pad-top(@pad);
+	.pad-bottom(@pad);
+}
+.padv{.padv();}
+
+.padh(@pad:5){
+	.pad-left(@pad);
+	.pad-right(@pad);
+}
+.padh{.padh();}
+
+.pad-top(@marg){
+	padding-top: unit(@marg,px);
+}
+.pad-bottom(@marg){
+	padding-bottom: unit(@marg,px);
+}
+.pad-left(@marg){
+	padding-left: unit(@marg,px);
+}
+
+.pad-right(@marg){
+	padding-right: unit(@marg,px);
+}
+
+
+/* margin */
+.margv(@marg){
+	.marg-top(@marg);
+	.marg-bottom(@marg);
+}
+
+
+.margh(@marg){
+	.marg-left(@marg);
+	.marg-right(@marg);
+}
+
+
+.marg-top(@marg){
+	margin-top: unit(@marg,px);
+}
+.marg-bottom(@marg){
+	margin-bottom: unit(@marg,px);
+}
+.marg-left(@marg){
+	margin-left: unit(@marg,px);
+}
+
+.marg-right(@marg){
+	margin-right: unit(@marg,px);
+}
+
+
+/*** 	PADDING 	***/
+
+
+/*** ANIMATE ***/
+.animate(@time : 125,@type:linear,@delay:0s){
+    -webkit-transition: all unit(@time,ms) @type;
+    -moz-transition: all unit(@time,ms) @type;
+    -ms-transition: all unit(@time,ms) @type;
+    -o-transition: all unit(@time,ms) @type;
+    transition: all unit(@time,ms) @type;
+
+    -webkit-transition-delay: @delay;
+	-moz-transition-delay: @delay;
+	-ms-transition-delay: @delay;
+	-o-transition-delay: @delay;
+	transition-delay: @delay;
+}
+.spin(){
+
+	-webkit-animation: spin 0.6s infinite linear;
+    -o-animation: spin 0.6s infinite linear;
+    -ms-animation: spin 0.6s infinite linear;
+    -moz-animation: spin 0.6s infinite linear;
+    animation: spin 0.6s infinite linear;
+
+    -webkit-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spin {
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-ms-keyframes spin {
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+@-o-keyframes spin {
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

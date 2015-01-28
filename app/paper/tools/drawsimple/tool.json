@@ -1,0 +1,1 @@
+{"tool":"drawsimple","toolName":"","onInit":"","onFrame":"","onResize":"","onMouseDown":" path = new Path();\r\n               path.strokeColor = colorFill();\r\n               path.add(event.point); ","onMouseDrag":"path.add(event.middlePoint);\r\n                \r\n               path.smooth();","onMouseMove":"","onMouseUp":"","onKeyDown":"","onKeyUp":"","toolFileMenu":""}

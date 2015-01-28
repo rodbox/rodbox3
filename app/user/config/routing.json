@@ -1,0 +1,37 @@
+{
+    "user_page_index": [
+        "user",
+        "index",
+        "page"
+    ],
+    "user_page_login": [
+        "user",
+        "login",
+        "page"
+    ],
+    "user_exec_login": [
+        "user",
+        "login",
+        "exec"
+    ],
+    "user_exec_create": [
+        "user",
+        "create",
+        "exec"
+    ],
+    "user_exec_logout": [
+        "user",
+        "logout",
+        "exec"
+    ],
+    "user_exec_upd": [
+        "user",
+        "upd",
+        "exec"
+    ],
+    "user_page_edit": [
+        "user",
+        "edit",
+        "page"
+    ]
+}

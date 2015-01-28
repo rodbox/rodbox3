@@ -1,0 +1,31 @@
+.CodeMirror {
+  width: 100%;
+  background-color: #292929 !important;
+  font-family: Monaco;
+  line-height: 1.2em;
+  height: 100%;
+}
+.CodeMirror .CodeMirror-sizer {
+  padding: 50px 7px;
+}
+.CodeMirror .CodeMirror-linenumber {
+  font-size: 0.7em !important;
+  color: #908c7e !important;
+}
+.CodeMirror .CodeMirror-gutters {
+  background-color: #222 !important;
+  color: #303030;
+  padding: 15px;
+  border-right-width: 0px;
+}
+.CodeMirror .CodeMirror-sizer {
+  padding: 15px;
+}
+.cm-s-twilight .CodeMirror-selected {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  z-index: 999;
+}
+.cm-s-twilight .cm-meta {
+  background-color: transparent;
+  color: #ffa52a;
+}

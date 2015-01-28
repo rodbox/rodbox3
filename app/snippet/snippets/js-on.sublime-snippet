@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[\$(document).on("${1:click}","${2:selector}",function (e){
+	e.preventDefault();	
+	var t = \$(this);
+	${3}
+	
+})]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>on</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description>on event jquery</description>
+	<category>javascript</category>
+</snippet>
+
+
+

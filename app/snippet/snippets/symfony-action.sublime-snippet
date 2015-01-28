@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[public function ${1:action}Action(${2}){
+	\$r = array(
+		'infotype'=>"success",
+		'msg'=>"ok"
+	);
+
+	return new JsonResponse(\$r);
+}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>action</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description></description>
+	<category>symfony</category>
+</snippet>
+
+
+

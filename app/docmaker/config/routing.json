@@ -1,0 +1,47 @@
+{
+    "docmaker_page_index": [
+        "docmaker",
+        "index",
+        "page"
+    ],
+    "docmaker_exec_create-doc": [
+        "docmaker",
+        "create-doc",
+        "exec"
+    ],
+    "docmaker_exec_edit-doc": [
+        "docmaker",
+        "edit-doc",
+        "exec"
+    ],
+    "docmaker_exec_pdf-doc": [
+        "docmaker",
+        "pdf-doc",
+        "exec"
+    ],
+    "docmaker_exec_save-doc": [
+        "docmaker",
+        "save-doc",
+        "exec"
+    ],
+    "docmaker_exec_style": [
+        "docmaker",
+        "style",
+        "exec"
+    ],
+    "docmaker_exec_tmp-5eb8574b": [
+        "docmaker",
+        "tmp-5eb8574b",
+        "exec"
+    ],
+    "docmaker_exec_tmp-8cbf7b17": [
+        "docmaker",
+        "tmp-8cbf7b17",
+        "exec"
+    ],
+    "docmaker_exec_tmp-fdf34173": [
+        "docmaker",
+        "tmp-fdf34173",
+        "exec"
+    ]
+}

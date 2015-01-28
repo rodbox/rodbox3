@@ -1,0 +1,44 @@
+@import 'var.less';
+
+.bga(@color, @alpha: 1) {
+  background-color: rgba( red(@color), green(@color), blue(@color), @alpha);
+}
+
+.ca(@color, @alpha: 1) {
+  background-color: rgba( red(@color), green(@color), blue(@color), @alpha);
+}
+
+.mixin-loop (@i:1) when (@i <= length(@colors)){
+	@name: extract(@names,@i);
+	
+	.c-play :nth-child(@{i}),
+	.c-@{i},
+	.c-@{name},
+	.c-@{i}-hover:hover,
+	.c-@{name}-hover:hover,
+	.sc-@{i} *,
+	.sc-@{name} *{
+		color: extract(@colors,@i) !important;
+	}
+	
+	.bg-play :nth-child(@{i}),
+	.bg-@{i},
+	.bg-@{name},
+	.bg-@{i}-hover:hover,
+	.bg-@{name}-hover:hover,
+	.sbg-@{i} *,
+	.sbg-@{name} *{
+		background-color: extract(@colors,@i) !important;
+	}
+
+	.border-@{i},
+	.border-@{name}	,
+	.sborder-@{i} *,
+	.sborder-@{name} *,
+	{
+		border-color: extract(@colors,@i) !important;
+	}
+	.mixin-loop(@i + 1);
+}
+
+.mixin-loop();

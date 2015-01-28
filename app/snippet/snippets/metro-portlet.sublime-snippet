@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[<!-- BEGIN PORTLET : ${3:title}  -->
+<div class="portlet light ">
+    <div class="portlet-title tabbable-line">
+        <div class="caption">
+            <i class="icon-${1:icon} ${2:c-1}"></i>
+            <span class="caption-subject ${2:c-1}  bold uppercase">${3:title}</span> <span class="caption-helper">${4:subtitle}</span>
+        </div>
+        <div class="actions">${5:action}</div>
+    </div>
+    <div class="portlet-body">
+		${6}
+    </div>
+</div>
+<!-- END PORTLET : ${3:title} -->]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>port</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description>metronic : portlet light</description>
+	<category>metronic</category>
+</snippet>
+
+
+

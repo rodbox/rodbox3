@@ -1,0 +1,8 @@
+{
+	"pages":{
+		"index" : ["FREE"]
+	},
+	"exec":{
+		"*" 	: ["ADMIN"]
+	}
+}

@@ -1,0 +1,40 @@
+/* FUNCTION LIST */
+/*** Z-INDEX ***/
+/*** Z-INDEX ***/
+/* padding */
+.padv {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.padh {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* margin */
+/*** 	PADDING 	***/
+/*** ANIMATE ***/
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes spin {
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

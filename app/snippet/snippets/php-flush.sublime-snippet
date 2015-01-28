@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[ob_start();
+	${1}
+	$obcontent = ob_get_contents();
+ob_end_clean();]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>flush</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description>ob flush</description>
+	<category>php</category>
+</snippet>
+
+
+

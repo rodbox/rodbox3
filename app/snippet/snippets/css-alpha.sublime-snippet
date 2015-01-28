@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[	-ms-filter 	: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=${1:opacity})';
+	filter 		: alpha(opacity=${1:opacity}):
+	-moz-opacity 	: 0.${1:opacity};
+	-khtml-opacity 	: 0.${1:opacity};
+	opacity 	: 0.${1:opacity};]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>alpha</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description></description>
+	<category>css</category>
+</snippet>
+
+
+

@@ -1,0 +1,277 @@
+{
+    "_tool__page_index": [
+        "_tool_",
+        "index",
+        "page"
+    ],
+    "app_page_index": [
+        "app",
+        "index",
+        "page"
+    ],
+    "appfile_page_index": [
+        "appfile",
+        "index",
+        "page"
+    ],
+    "appfile_exec_create-app": [
+        "appfile",
+        "create-app",
+        "exec"
+    ],
+    "appfile_exec_create": [
+        "appfile",
+        "create",
+        "exec"
+    ],
+    "appfile_exec_edit": [
+        "appfile",
+        "edit",
+        "exec"
+    ],
+    "appfile_exec_list": [
+        "appfile",
+        "list",
+        "exec"
+    ],
+    "appfile_exec_remove": [
+        "appfile",
+        "remove",
+        "exec"
+    ],
+    "appfile_exec_save": [
+        "appfile",
+        "save",
+        "exec"
+    ],
+    "appinfo_page_index": [
+        "appinfo",
+        "index",
+        "page"
+    ],
+    "colors_page_index": [
+        "colors",
+        "index",
+        "page"
+    ],
+    "colors_exec_export-palette": [
+        "colors",
+        "export-palette",
+        "exec"
+    ],
+    "colors_exec_png-palette": [
+        "colors",
+        "png-palette",
+        "exec"
+    ],
+    "colors_exec_save-palette": [
+        "colors",
+        "save-palette",
+        "exec"
+    ],
+    "docmaker_page_index": [
+        "docmaker",
+        "index",
+        "page"
+    ],
+    "docmaker_exec_create-doc": [
+        "docmaker",
+        "create-doc",
+        "exec"
+    ],
+    "docmaker_exec_edit-doc": [
+        "docmaker",
+        "edit-doc",
+        "exec"
+    ],
+    "docmaker_exec_pdf-doc": [
+        "docmaker",
+        "pdf-doc",
+        "exec"
+    ],
+    "docmaker_exec_save-doc": [
+        "docmaker",
+        "save-doc",
+        "exec"
+    ],
+    "docmaker_exec_style": [
+        "docmaker",
+        "style",
+        "exec"
+    ],
+    "docmaker_exec_tmp-5eb8574b": [
+        "docmaker",
+        "tmp-5eb8574b",
+        "exec"
+    ],
+    "docmaker_exec_tmp-8cbf7b17": [
+        "docmaker",
+        "tmp-8cbf7b17",
+        "exec"
+    ],
+    "docmaker_exec_tmp-fdf34173": [
+        "docmaker",
+        "tmp-fdf34173",
+        "exec"
+    ],
+    "localsearch_page_index": [
+        "localsearch",
+        "index",
+        "page"
+    ],
+    "paper_page_index": [
+        "paper",
+        "index",
+        "page"
+    ],
+    "paper_exec_compile-tools": [
+        "paper",
+        "compile-tools",
+        "exec"
+    ],
+    "paper_exec_edit-preset": [
+        "paper",
+        "edit-preset",
+        "exec"
+    ],
+    "paper_exec_edit-tool": [
+        "paper",
+        "edit-tool",
+        "exec"
+    ],
+    "paper_exec_save-preset": [
+        "paper",
+        "save-preset",
+        "exec"
+    ],
+    "paper_exec_save-tool": [
+        "paper",
+        "save-tool",
+        "exec"
+    ],
+    "ressources_page_index": [
+        "ressources",
+        "index",
+        "page"
+    ],
+    "ressources_exec_addanim": [
+        "ressources",
+        "addanim",
+        "exec"
+    ],
+    "ressources_exec_additem": [
+        "ressources",
+        "additem",
+        "exec"
+    ],
+    "ressources_exec_list-anim": [
+        "ressources",
+        "list-anim",
+        "exec"
+    ],
+    "ressources_exec_list": [
+        "ressources",
+        "list",
+        "exec"
+    ],
+    "ressources_exec_uploadanim": [
+        "ressources",
+        "uploadanim",
+        "exec"
+    ],
+    "snippet_page_index": [
+        "snippet",
+        "index",
+        "page"
+    ],
+    "snippet_exec_config-save": [
+        "snippet",
+        "config-save",
+        "exec"
+    ],
+    "snippet_exec_del": [
+        "snippet",
+        "del",
+        "exec"
+    ],
+    "snippet_exec_open": [
+        "snippet",
+        "open",
+        "exec"
+    ],
+    "snippet_exec_pdf": [
+        "snippet",
+        "pdf",
+        "exec"
+    ],
+    "snippet_exec_save": [
+        "snippet",
+        "save",
+        "exec"
+    ],
+    "snippet_exec_upload": [
+        "snippet",
+        "upload",
+        "exec"
+    ],
+    "snippet_exec_zip": [
+        "snippet",
+        "zip",
+        "exec"
+    ],
+    "test_page_index": [
+        "test",
+        "index",
+        "page"
+    ],
+    "test_exec_save": [
+        "test",
+        "save",
+        "exec"
+    ],
+    "test_form_page_index": [
+        "test_form",
+        "index",
+        "page"
+    ],
+    "test_form_exec_test": [
+        "test_form",
+        "test",
+        "exec"
+    ],
+    "user_page_index": [
+        "user",
+        "index",
+        "page"
+    ],
+    "user_page_login": [
+        "user",
+        "login",
+        "page"
+    ],
+    "user_exec_login": [
+        "user",
+        "login",
+        "exec"
+    ],
+    "user_exec_create": [
+        "user",
+        "create",
+        "exec"
+    ],
+    "user_exec_logout": [
+        "user",
+        "logout",
+        "exec"
+    ],
+    "user_exec_upd": [
+        "user",
+        "upd",
+        "exec"
+    ],
+    "user_page_edit": [
+        "user",
+        "edit",
+        "page"
+    ]
+}

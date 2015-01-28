@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[\$json = json_decode(file_get_contents('${1:dir}.json'),true);${2}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>json</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description>json decode file to array</description>
+	<category>php</category>
+</snippet>
+
+
+

@@ -1,0 +1,386 @@
+@import "../../app/css/var.less";
+@import "../../app/css/grid.less";
+@import "../../app/css/colors.less";
+@import "../../app/css/import.less";
+
+@cmMenu 		: 40;
+@cmLocation 	: 25;
+
+@keyColor1		: 3;
+@keyColor2		: 3;
+@keyBgColor		: 8;
+
+@bgColor1 	: extract(@colors,3);
+@bgColor2 	: extract(@colors,8);
+@bgColor3 	: extract(@colors,2);
+@bgColor4 	: darken(@bgColor3,9);
+@bgColor5 	: darken(@bgColor3,9);
+
+@cColor1 	: extract(@colors,2);
+@cColor2 	: extract(@colors,2);
+@cColor3 	: extract(@colors,3);
+@cColor4 	: darken(@bgColor3,9);
+@cColor5 	: darken(@bgColor3,4);
+
+@cPrimary  	: lighten(@bgColor2,25);
+@cPrimary2  	: lighten(@bgColor2,10);
+
+/* Code mirror */
+@bgGutterColorCM: lighten(@bgColor2,2);
+@bgCM	 		: @bgColor2;
+@cCM	 		: @cPrimary;
+@cLineNumCM 	: lighten(@bgGutterColorCM,10);
+@fontSizeLineNumCM: 0.7em;
+@fontFamilyCM	: Monaco;
+@lineHeightCM	: 1.4em;
+@fontSizeCM		: 1em;
+
+/* Nav */
+@bgHeader		: darken(@bgColor2,3.5);
+@bgSidebar		: @bgCM;
+@cSidebar		: @cPrimary;
+@cSidebar2		: @cPrimary2;
+@fontSizeNav	: 0.9em;
+
+
+@bgFilelocationCM:@bgGutterColorCM;
+@bgNavbarCM		:darken(@bgColor2,5);
+
+/**/
+@bgLocalsearch : @bgSidebar;
+
+/* File list */
+@colorHideForceShow : @cPrimary2;
+
+/* */
+@bgInput		: @bgGutterColorCM;
+@cInput 		: extract(@colors,3);
+
+/**/
+@bgOnOpen		: extract(@colors,3);
+@cOnOpen		: extract(@colors,2) !important;
+
+@fontFamilyBody: 'Open Sans', sans-serif;
+
+
+
+.navbar-default{
+	background-color: @bgHeader !important;
+}
+
+.folder-link{
+	margin-left: -8px;
+	&:before{
+		font-family: "FontAwesome";
+		content:"\f114";
+		margin-right: 10px;
+		margin-left: 5px;
+		font-weight: normal;
+		font-size: 1.4em;
+		color:@cSidebar2;
+	}
+	&.open{
+		font-weight: bold;
+	}
+	&.open:before{
+		font-family: "FontAwesome" !important;
+		content:"\f115" !important;
+	}
+}
+
+body{
+	font-family: @fontFamilyBody;
+	font-weight: light;
+	.no-bgi;
+	background-color: extract(@colors,8) !important;
+	a{
+		color: @cPrimary !important;
+	}
+}
+
+a.file-link[data-location$=".php"]{
+
+}
+
+li.onFocus{
+			a:first-child{
+				font-size: 3em !important;
+			}
+}
+
+
+.file-list{
+	&#file-list{
+		max-width: 300px;
+	}
+	height: 0px;
+	overflow: hidden;
+	padding-left:30px;
+	font-weight: light;
+	li{
+
+		&:last-child{
+			border-bottom: 0px;
+		}
+		&.newfile {
+			a{
+				&:after{
+					content: " new";
+					position: absolute;
+					right: 0px;
+					margin-right: 5px;
+					font-size: 0.7em;
+				}
+			} 
+		}
+		a{
+			text-decoration: none !important;
+			padding: 7px 5px;
+			display: block;
+			line-height: 1em;
+			&:hover{
+				background-color: rgba(255,255,255,0.05);
+			}
+		}
+	}
+	&.root{
+		&,
+		&.open-for-search,
+		&.open{
+			overflow: auto;
+			height: calc(~"100% - 75px");
+			padding-left:0px;
+			padding-right:0px;
+			width: 100%;
+			margin-right: -30px;
+		}
+	}
+	&.open-for-search,
+	&.open{
+		height: inherit;
+	}
+	ul li{
+		margin-left: -20px;
+		// margin-right: -15px;
+		padding-left: 15px;
+
+		border-left: 1px solid @cSidebar2;
+	}
+}
+
+.search-hide.show-for-child{
+	display: block;
+}
+
+div.input-group-localsearch{
+
+	line-height: 2em !important;
+	background-color: @bgLocalsearch !important;
+	.input-group-addon,
+	input{
+		background-color: @bgInput !important;
+		border: 0px !important;
+		color: @cInput !important;
+	}
+	input{
+		padding-left: 3px;
+	}
+}
+.localsearch-meta{
+	margin-left: 5px;
+		padding-bottom: 10px;
+}
+.dropdown-menu ,
+ .open > a, .navbar-nav .open > a:hover, .navbar-nav .open > a:focus{
+ 	background-color: lighten(extract(@colors,3),20) !important;
+ 	color: extract(@colors,2) !important;
+ }
+
+
+.cm-s-twilight .CodeMirror-selected{
+	background-color: rgba(255,255,255,0.1) !important;
+	z-index: 999;
+}
+.cm-s-twilight .cm-meta{
+	background-color: transparent;
+	color:#ffa52a;
+}
+.meta{
+	position: absolute;
+	margin-top: -3px;
+	.z-max;
+	width: 100%;
+}
+
+.nav-mode-3{
+	.CodeMirror{
+		height: calc(~"100% + 50px") !important;
+	}
+}
+
+textarea,
+.CodeMirror{
+	font-family: @fontFamilyCM;
+		height: 100%;
+
+	& .CodeMirror-sizer{
+		padding: 40px 7px;
+	}
+	& .CodeMirror-linenumber{
+		color: @cLineNumCM !important;
+		font-size: @fontSizeLineNumCM !important;
+	}
+}
+.mark-gutter{
+	background-color: #ffbe60 !important;
+}
+
+#app-sidebar{
+	background-color: @bgSidebar !important ;
+	font-size: @fontSizeNav;
+	padding: 20px!important;
+	&,
+	& a{
+		color : @cSidebar;
+		&.onOpen{
+			color: @cOnOpen !important;
+			background-color: @bgOnOpen !important;
+		}
+	}
+}
+
+
+#navbar-codemirror{
+	background-color: @bgNavbarCM !important ;
+}
+#filelocation {
+	margin-top: 0px;
+	margin-top: 3px;
+
+	display: block;
+	.z-max;
+	font-size: 0.8em;
+	padding: 5px 15px;
+	color:extract(@colors,@keyColor2) !important;
+	font-weight: normal;
+	min-height: unit(@cmLocation,px);
+	height: unit(@cmLocation,px);
+	background-color: @bgFilelocationCM !important;
+}
+#navbar-codemirror{
+	height: unit(@cmMenu,px) !important;
+	min-height: unit(@cmMenu,px);
+	*{
+		color:extract(@colors,@keyColor1) !important;
+	}
+	a{
+		padding-top: 9px;
+		padding-bottom: 9px;
+	}
+}
+
+.page{
+    padding: 50px 0px 0px 0px!important;
+    height: calc(~"100%") !important;
+    width: calc(~"100% + 300px") !important;
+}
+
+.mark-text{
+	padding: 0px 5px !important;
+	color: #d3b038 !important;
+}
+
+.dropdown-menu > li > a {
+	color: extract(@colors,2) !important;
+}
+
+ul.open li.search-hide{
+	display: block !important;
+	&,
+	& a,
+	& *{
+		color : @colorHideForceShow !important;
+	}
+	& .search-show a{
+		color : @cSidebar !important;
+	}
+}
+
+dl{
+	dt{
+		font-weight: normal;
+		font-size: 0.9em;
+		opacity: 0.6;
+	}
+	dd{
+		margin-left: 10px;
+		margin-bottom: 5px;
+	}
+}
+
+.fileservice{
+	background-color: darken(@colorHideForceShow,7);
+}
+
+.appfile-foldermenu{
+	position: fixed;
+	display: none;
+
+	padding: 10px 10px 0px 10px;
+	margin-right: 10px;
+	.fileservice;
+	z-index: 1060 !important;
+	select,
+	input{
+		background-color: rgba(255,255,255,0.1);
+		.no-border;
+		margin-bottom: 10px;
+		color:@bgOnOpen;
+		padding: 5px;
+		.radius(5px);
+	}
+	.btn{
+		padding: 4px 12px;
+	}
+}
+
+#pack-create{
+	display: block;
+	
+	background-color: darken(@colorHideForceShow,40);
+	
+	height: 200px !important;
+	width: 300px;
+	
+	left: 0px;
+	bottom: 0px;
+	padding: 0px 10px;
+	padding-bottom: 30px;
+	margin: -25px 0px !important;
+
+	.z-max;
+	.animate();
+	-moz-transform: translateY(127px);
+	-webkit-transform: translateY(127px);
+	-o-transform: translateY(127px);
+	-ms-transform: translateY(127px);
+	transform: translateY(127px);
+
+	textarea,
+	select,
+	input{
+		background-color: rgba(255,255,255,0.1);
+		.no-border;
+		margin-bottom: 10px;
+	}
+	
+	&:hover{
+		-moz-transform: translateY(-25px);
+		-webkit-transform: translateY(-25px);
+		-o-transform: translateY(-25px);
+		-ms-transform: translateY(-25px);
+		transform: translateY(-25px);
+	}
+
+}
+

@@ -1,0 +1,71 @@
+html {
+  overflow-x: hidden;
+}
+#bodyProtect {
+  display: none;
+  position: fixed;
+  top: 95px;
+  right: 15px;
+  color: #ffd448;
+  font-size: 0.8em;
+}
+.onLock #bodyProtect {
+  display: block;
+}
+.page {
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  transition: all 250ms linear;
+  width: calc(100% +  300px);
+}
+#app-sidebar.col-md-3 {
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  transition: all 250ms linear;
+  width: 300px;
+  overflow: auto;
+}
+#app-content.col-md-9 {
+  width: calc(100% -  300px);
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+.navbar.navbar-fixed-top {
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+.nav-mode-2 .page {
+  -moz-transform: translateX(-300px);
+  -webkit-transform: translateX(-300px);
+  -o-transform: translateX(-300px);
+  -ms-transform: translateX(-300px);
+  transform: translateX(-300px);
+}
+#appinfo-container {
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  transition: all 250ms linear;
+  top: 83px;
+}
+.nav-mode-3 #appinfo-container {
+  top: 33px;
+}
+.nav-mode-3 .navbar.navbar-fixed-top {
+  margin-top: -50px !important;
+}
+.nav-mode-3 .page {
+  margin-top: -50px !important;
+  height: calc(100% + 100px);
+}

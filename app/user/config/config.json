@@ -1,0 +1,14 @@
+{
+	"user_page_index":{
+		"title":"Créer un compte",
+		"allow":"*"
+	},
+	"user_page_login":{
+		"title":"Se connecter",
+		"allow":"*"
+	},
+	"user_page_edit":{
+		"title":"Mon compte",
+		"allow":"*"
+	}
+}

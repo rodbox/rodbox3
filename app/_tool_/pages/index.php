@@ -1,0 +1,1 @@
+<?php $c->view("_tool_","content");?>

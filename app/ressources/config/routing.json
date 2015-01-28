@@ -1,0 +1,32 @@
+{
+    "ressources_page_index": [
+        "ressources",
+        "index",
+        "page"
+    ],
+    "ressources_exec_addanim": [
+        "ressources",
+        "addanim",
+        "exec"
+    ],
+    "ressources_exec_additem": [
+        "ressources",
+        "additem",
+        "exec"
+    ],
+    "ressources_exec_list-anim": [
+        "ressources",
+        "list-anim",
+        "exec"
+    ],
+    "ressources_exec_list": [
+        "ressources",
+        "list",
+        "exec"
+    ],
+    "ressources_exec_uploadanim": [
+        "ressources",
+        "uploadanim",
+        "exec"
+    ]
+}

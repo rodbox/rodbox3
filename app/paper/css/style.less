@@ -1,0 +1,59 @@
+@import "../../app/css/var.less";
+@import "../../app/css/grid.less";
+@import "../../app/css/colors.less";
+@import "../../app/css/import.less";
+
+canvas{
+	width: 500px;
+	height: 500px;
+	background-color: extract(@colors,3);
+}
+ul.paper-edit-tool{
+	
+	li{
+		
+		margin-bottom: 20px;
+
+		label{
+			display: block;
+			color: extract(@colors,3);
+			font-weight: lighter;
+			opacity: 0.5;
+			font-size: 0.7em;
+		}
+		select,
+		input,
+		textarea{
+			width: 100%;
+			background-color: extract(@colors,8);
+			color: extract(@colors,7);
+			.pad-2;
+			.no-border;
+			&.tool-event{
+				height: 90px !important;	
+			}	
+		
+		}
+	}
+}
+.dropdown-menu li{
+		margin-bottom: 0px !important;
+	}
+.CodeMirror{
+	height: 50px !important;
+	opacity: 0.3;
+	.animate();
+	&.CodeMirror-sizer{
+		margin-left: 20px !important;;
+	}
+	&.CodeMirror-focused{
+		opacity: 1;
+		height: 300px !important;
+		& .CodeMirror-gutters{
+			height: 300px !important;
+		}
+	}
+}
+#header{
+	background-color: darken(extract(@colors,2),5) !important;
+}

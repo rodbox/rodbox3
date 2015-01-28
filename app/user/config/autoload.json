@@ -1,0 +1,19 @@
+{
+	"index":{
+		"init":{
+			"lib":[
+            	
+        	]
+		},
+        "js":{
+        	"user":[
+        		"app"
+        	]
+        },
+        "css":{
+        	"user":[
+        		"style"
+        	]
+        }
+	}
+}

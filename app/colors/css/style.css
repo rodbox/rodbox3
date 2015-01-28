@@ -1,0 +1,207 @@
+form.css-color {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+}
+.color-list.ui-sortable li {
+  padding: 0px !important;
+  margin: 0px !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  box-shadow: none !important;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 16px 8px;
+  -webkit-transition: all 0ms ease !important;
+  -moz-transition: all 0ms ease !important;
+  -ms-transition: all 0ms ease !important;
+  -o-transition: all 0ms ease !important;
+  transition: all 0ms ease !important;
+}
+.color-list.ui-sortable li input {
+  border: 0px !important;
+}
+form.css-color .mini-menu {
+  display: inline;
+  float: right;
+}
+.color-list li {
+  display: inline;
+  float: left;
+}
+.color-list li .color-preview-thumb {
+  width: 48px !important;
+  height: 32px !important;
+  border-radius: 0px;
+  border: 0px !important;
+}
+.color-list li.ui-sortable-placeholder .color-preview-thumb {
+  width: 96px !important;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.add-color {
+  margin-left: 15px;
+}
+.color-list li .del-color {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 0.7em;
+  margin-top: -96px;
+}
+input[name='suf'],
+input[name='title'] {
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, 0.8);
+}
+input[name='suf']:focus,
+input[name='title']:focus,
+input[name='suf']:hover,
+input[name='title']:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #fff;
+}
+.color-ref {
+  font-size: 0.6em;
+  color: #fff;
+}
+.color-list li.toggle-on {
+  width: 240px;
+}
+#color-edit {
+  position: absolute;
+  margin-top: -30px;
+  padding: 0px;
+  width: 240px;
+  z-index: 999;
+  background-color: #fff;
+  -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3);
+}
+#color-edit input {
+  padding: 5px !important;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+#color-edit input.color-initial,
+#color-edit input[name=color-hex-edit] {
+  width: calc(40%);
+  margin-right: 10px;
+  display: inline;
+}
+#color-edit input.inline {
+  display: inline;
+  width: calc(23%);
+  margin-right: 10px;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+div.color-preview {
+  width: 100% !important;
+  height: 150px !important;
+}
+.sp-initial span {
+  border: medium none;
+  display: block;
+  float: left;
+  height: 38px !important;
+  margin: 0px;
+  width: 48px !important;
+}
+#color-edit .sp-picker-container,
+.sp-palette-container {
+  margin-bottom: -360px;
+}
+#color-edit .sp-initial {
+  border: 0px !important;
+  height: 48px;
+}
+#color-edit .sp-container {
+  background-color: #fff !important;
+}
+#color-edit .sp-picker-container,
+.sp-palette-container {
+  padding: 10px 10px 300px !important;
+}
+#color-edit .sp-container {
+  border: 0px !important;
+  width: calc(90%);
+}
+#color-edit .sp-picker-container {
+  border: 0px !important;
+  width: inherit !important;
+}
+#color-edit .sp-dragger {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border: 0px !important;
+}
+#color-edit .sp-color,
+.sp-hue {
+  border: 0px !important;
+}
+#color-edit .sp-input {
+  float: right;
+  font-size: 0.9em;
+  margin-left: 10px;
+  width: 50%;
+}
+.sp-container,
+.sp-container button,
+.sp-container input,
+.sp-color,
+.sp-hue {
+  font: inherit !important;
+}
+textarea,
+input[type="password"],
+input[type="text"],
+input[type="email"],
+select {
+  border: 0 none;
+  box-sizing: border-box;
+  padding: 8px;
+}
+.new-palette .css-color {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.palette {
+  overflow: hidden !important;
+}
+.palette form input[name=title],
+.palette form input[name=suf] {
+  background-color: rgba(25, 25, 25, 0.95) !important;
+  margin-right: 15px;
+}
+.palette #form-result {
+  padding: 10px;
+  color: #fff;
+}
+.palette #form-result .close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1051 !important;
+}
+.palette #form-result.success {
+  background-color: rgba(19, 96, 85, 0.98);
+}
+.palette #form-result.error {
+  background-color: rgba(220, 53, 34, 0.98);
+}
+html body.modal-on {
+  overflow: hidden !important;
+}
+html body.modal-on .modal-bg {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 36, 36, 0.8);
+  z-index: 1050;
+}

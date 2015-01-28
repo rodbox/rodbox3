@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[background-image : url('../img/${0:img}'); background-repeat:${1:no-repeat}; background-position: ${2:center center};]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bgi</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>css</scope>
+	<description></description>
+	<category>css</category>
+</snippet>
+
+
+

@@ -1,0 +1,1 @@
+<?php $c->view("localsearch","content");?>

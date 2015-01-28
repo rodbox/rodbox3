@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[${1:routeName}:
+    path:     /${2:routePath}
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: '${3:routeBundle}Bundle:${4:Default}:${5:file}html.twig']]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>route</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description>render view sans passer par le controller</description>
+	<category>symfony</category>
+</snippet>
+
+
+

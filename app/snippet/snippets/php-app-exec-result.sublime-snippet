@@ -1,0 +1,39 @@
+<snippet>
+	<content><![CDATA[\$error= array();
+
+/* TEST POST DATA */
+foreach (\$_POST["${1:param}"] as \$key => \$value) {
+
+	\$eval =  ${2:opération}
+
+	if(!\$eval)
+		\$error[] = $url;
+}
+
+
+\$valid = (count(\$error)==0)?true:false; //la condition
+/* Return for json content */
+if(\$eval){
+	\$msg 		= "${2}"; // le message de retour pour appInfo
+	\$infotype 	= "success"; // [loader,success,annonce,error] le type de retour pour appInfo
+	\$content 	= ""; // du contenu HTML de présentation
+	\$app 		= array(); // des données spécifiques a l'application
+	\$eval 		= \$eval; // booléen de l'opération
+}
+else {
+	\$msg 		= "${3}"; // le message de retour pour appInfo
+	\$infotype 	= "error"; // [loader,success,annonce,error] le type de retour pour appInfo
+	\$content 	= ""; // du contenu HTML de présentation
+	\$app 		= array(); // des données spécifiques a l'application
+	\$eval 		= \$eval; // booléen de l'opération
+}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>result</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description></description>
+	<category>php</category>
+</snippet>
+
+
+

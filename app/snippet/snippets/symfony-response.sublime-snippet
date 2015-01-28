@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[\$content = \$this
+			->render('${1:bundleroute}:${2:viewfolder}:${3:viewfile}.html.twig'${4:,array(
+				"${5:datakey}"=>"${6:datavalue}"
+			)});
+
+		return new Response(\$content);]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>response</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description></description>
+	<category>symfony</category>
+</snippet>
+
+
+

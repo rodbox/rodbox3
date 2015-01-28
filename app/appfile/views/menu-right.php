@@ -1,0 +1,2 @@
+<li><a href="<?php $c->execUrl("appfile","save"); ?>" id="cm-save" class="btn cm-save"><i class="glyphicon glyphicon-floppy-disk"></i></a></li>
+<li><a href="#" id="toggle-ui" class="btn toggle-ui "><i class="icomoon-menu7"></i></a></li>

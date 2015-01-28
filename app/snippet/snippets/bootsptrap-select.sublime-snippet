@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[<select id="${1:id-and-name}" name="${1:id-and-name}" class="selectpicker ${2}">
+	<option value="${3:value}">${4:name value}</option>
+</select>]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>select</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description>select bootstrap</description>
+	<category>bootstrap</category>
+</snippet>
+
+
+

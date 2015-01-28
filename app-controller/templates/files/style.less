@@ -1,0 +1,17 @@
+@import "../../app/css/var.less";
+@import "../../app/css/grid.less";
+@import "../../app/css/colors.less";
+@import "../../app/css/import.less";
+
+@elem: 10;
+
+/* Elem */
+
+.mixin-loop (@i) when (@i > 0) {
+  	div.elem(@{i}) {
+		
+	}
+  .mixin-loop(@i - 1);
+}
+
+.mixin-loop(@elem);

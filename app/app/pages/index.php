@@ -1,0 +1,1 @@
+<?php $c->view("app","content");?>

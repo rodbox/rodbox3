@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[function rscandir(\$dir){
+\$filter = array(".", "..", "__MACOSX", "nbproject", "_notes", ".DS_Store", ".komodotools", "_tmp",".git",".gitignore");
+  \$dirs = array_fill_keys( array_diff( scandir( \$dir ), \$filter ), array());
+  foreach( \$dirs as \$d => \$v )
+    if( is_dir(\$dir."/".\$d) )
+      \$dirs[\$d] = rscandir(\$dir."/".\$d);
+  return \$dirs;
+}
+\$dir 	= "${1}";
+\$list 	= rscandir(\$dir);]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>scan</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description>function retroune la liste des dossiers</description>
+	<category>php</category>
+</snippet>
+
+
+

@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[<!-- BEGIN INPUT GROUP  -->
+<div class="input-group">
+  <span class="input-group-addon" >${1}</span>
+  <input id="${2}" name="${2}" type="text" class="form-control" placeholder="${3}" aria-describedby="basic-addon1">
+</div>
+<!-- END INPUT GROUP  -->]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>inputgroup</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description></description>
+	<category>bootstrap</category>
+</snippet>
+
+
+

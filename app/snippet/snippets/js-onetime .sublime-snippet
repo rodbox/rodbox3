@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[\$(document).oneTime(${1:time},function(){
+	${2:tab}    
+})]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>onetime</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description></description>
+	<category>javascript</category>
+</snippet>
+
+
+

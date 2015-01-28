@@ -1,0 +1,42 @@
+{
+    "snippet_page_index": [
+        "snippet",
+        "index",
+        "page"
+    ],
+    "snippet_exec_config-save": [
+        "snippet",
+        "config-save",
+        "exec"
+    ],
+    "snippet_exec_del": [
+        "snippet",
+        "del",
+        "exec"
+    ],
+    "snippet_exec_open": [
+        "snippet",
+        "open",
+        "exec"
+    ],
+    "snippet_exec_pdf": [
+        "snippet",
+        "pdf",
+        "exec"
+    ],
+    "snippet_exec_save": [
+        "snippet",
+        "save",
+        "exec"
+    ],
+    "snippet_exec_upload": [
+        "snippet",
+        "upload",
+        "exec"
+    ],
+    "snippet_exec_zip": [
+        "snippet",
+        "zip",
+        "exec"
+    ]
+}

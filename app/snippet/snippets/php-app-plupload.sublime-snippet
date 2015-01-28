@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[<?php 
+ /* 
+	DOCUMENTATION 
+		http://www.plupload.com/docs
+		le array sera convertit en JSON.
+	*/
+	\$config = array(
+		"drop_title"=> "${1:drop_title}",
+		"bg_color"	=> "${2:bg-2-3}",
+		"data_eval"	=> array(
+			"${3:param_eval_1}"	=> '\$("${4:selector_param_eval_1}").val()'),
+		"data"		=> array("${5:param1}"	=> "${6:value1}"),
+		"resize"	=> array(
+				"width"	=> 1200,
+				"height"	=> 720
+				),
+		"mime_types"=> array(
+				array(
+					'title' 	=>  "Image files",'extensions'	=> "jpg,gif,png" ),
+				array(
+					'title' 	=>  "Zip files",'extensions'	=> "zip" )
+			)
+		);
+	new plupload("${3:tab}","${4:exec}",\$config);
+?>]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>plupload</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>php</scope>
+	<description>PHP : automatique plupload integration</description>
+	<category>php</category>
+</snippet>
+
+
+

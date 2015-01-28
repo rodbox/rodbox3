@@ -1,0 +1,1 @@
+cd ../../../Applications/MAMP/htdocs/[LABS]

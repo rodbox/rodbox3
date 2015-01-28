@@ -1,0 +1,43 @@
+@import "var.less";
+@fontSizeLineNumCM	: 0.7em;
+@lineHeightCM		: 1.2em;
+
+@bgColor1 	: extract(@colors,2);
+@bgColor1d 	: darken(@bgColor1,5);
+@bgColor1l 	: lighten(@bgColor1,2);
+
+@bgColor2 	: extract(@colors,3);
+@bgColor2d 	: darken(@bgColor2,20);
+@bgColor2l 	: lighten(@bgColor2,2);
+
+.CodeMirror{
+	width: 100%;
+	background-color: @bgColor1l!important;
+	font-family: Monaco;
+	line-height: @lineHeightCM;
+		height: 100%;
+		& .CodeMirror-sizer{
+		padding: 50px 7px;
+	}
+	& .CodeMirror-linenumber{
+		font-size: @fontSizeLineNumCM !important;
+		color: @bgColor2d !important;
+	}
+	& .CodeMirror-gutters{
+		background-color: #222 !important;
+		color: #303030;
+		padding: 15px;
+		border-right-width: 0px;
+	}
+	& .CodeMirror-sizer{
+		padding: 15px;
+	}
+}
+.cm-s-twilight .CodeMirror-selected{
+	background-color: rgba(255,255,255,0.1) !important;
+	z-index: 999;
+}
+.cm-s-twilight .cm-meta{
+	 background-color: transparent;
+	 color:#ffa52a;
+}

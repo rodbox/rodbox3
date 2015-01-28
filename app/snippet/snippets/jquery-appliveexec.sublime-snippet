@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[\$('#${1}').appLiveExec({
+	form:"${2:form}",
+	callback:function(json,t){
+		${3}
+	}
+});]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>liveexec</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description>plugin liveexec</description>
+	<category>javascript</category>
+</snippet>
+
+
+

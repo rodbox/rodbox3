@@ -1,0 +1,4 @@
+{
+	"userService" : ["user","userController","userMenu"],
+	"ifuserService" : ["user","userController","evalUser"]
+}

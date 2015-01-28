@@ -1,0 +1,32 @@
+{
+    "paper_page_index": [
+        "paper",
+        "index",
+        "page"
+    ],
+    "paper_exec_compile-tools": [
+        "paper",
+        "compile-tools",
+        "exec"
+    ],
+    "paper_exec_edit-preset": [
+        "paper",
+        "edit-preset",
+        "exec"
+    ],
+    "paper_exec_edit-tool": [
+        "paper",
+        "edit-tool",
+        "exec"
+    ],
+    "paper_exec_save-preset": [
+        "paper",
+        "save-preset",
+        "exec"
+    ],
+    "paper_exec_save-tool": [
+        "paper",
+        "save-tool",
+        "exec"
+    ]
+}

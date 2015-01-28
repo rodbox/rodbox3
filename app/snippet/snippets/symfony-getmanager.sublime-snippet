@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[\$em = \$this->getDoctrine()->getManager();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>em</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description></description>
+	<category>symfony</category>
+</snippet>
+
+
+

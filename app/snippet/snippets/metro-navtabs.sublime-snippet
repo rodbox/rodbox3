@@ -1,0 +1,37 @@
+<snippet>
+	<content><![CDATA[<!-- BEGIN NAVTABS : title  -->
+<ul class="nav nav-tabs" id="${1:tabID}">
+    <li class="active">
+        <a data-toggle="tab" href="#${1:tabID}-tab-1" aria-expanded="true">${2:title tab 1}</a>
+    </li>
+    <li class="">
+        <a data-toggle="tab" href="#${1:tabID}-tab-2" aria-expanded="false">${3:title tab 2} </a>
+    </li>
+    <li class="">
+        <a data-toggle="tab" href="#${1:tabID}-tab-3" aria-expanded="false">${4:title tab 3} </a>
+    </li>
+</ul>
+<!-- END NAVTABS : title  -->
+<!-- BEGIN TABSCONTENT  -->
+<div class="tab-content">
+    <div id="${1:tabID}-tab-1" class="tab-pane active">
+	${5:content - 1111}
+    </div>
+    <div id="${1:tabID}-tab-2" class="tab-pane">
+	content - 2222
+    </div>
+    <div id="${1:tabID}-tab-3" class="tab-pane">
+	content - 3333
+    </div>
+</div>
+<!-- END TABSCONTENT  -->]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tabs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description>navigation par onglet</description>
+	<category>metronic</category>
+</snippet>
+
+
+

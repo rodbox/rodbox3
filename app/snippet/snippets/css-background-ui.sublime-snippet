@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[background-image : url('http://metronic.excentrik.fr/mnk-include/core/img/svg/${1:img}.svg'); background-repeat:${2:no-repeat}; background-position: ${3:center center};background-size: ${4:16}px ${5:16}px;]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bgiui</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description></description>
+	<category>css</category>
+</snippet>
+
+
+

@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[\$(document).on("submit","#${1}",function(){
+	var t = \$(this);
+	var action = t.attr("action");
+	var data = t.serialize();
+	\$.post(action,data,function (json){
+                ${2}
+	},"JSON");
+	return false;
+})]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>onsubmit</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description></description>
+	<category>javascript</category>
+</snippet>
+
+
+

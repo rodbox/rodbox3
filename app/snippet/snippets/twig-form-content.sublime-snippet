@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[{{ form_label(${1:form.${2}}) }}
+{{ form_errors(${1:form.${2}}) }}
+{{ form_widget(${1:form.${2}}) }}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tform</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+	<description>form_label + form_errors + form_widget</description>
+	<category>twig</category>
+</snippet>
+
+
+

@@ -1,0 +1,54 @@
+@import 'var.less';
+/* Line */
+
+
+.line-loop (@i:1, @x:@line) when (@i <= @line){
+	.line-@{i}{
+		@height : @i * (1/@line) * 100;
+		 height : unit(@height, %);
+		 margin-bottom: 0px;
+		 margin-top: 0px;
+		 padding-top: 0px;
+		 padding-bottom: 0px;
+		 display: block;
+	}
+	.line-loop(@i + 1,@x - 1);
+}
+
+.line-loop();
+
+/* TOP */
+.top { 
+	top : 0px;
+}
+
+.top-loop (@i:1, @x:@line) when (@i <= @line){
+	.top-@{i}{
+		@top : @i * (1/@line) * 100;
+		 top : unit(@top, %);
+	}
+	.top-loop(@i + 1,@x - 1);
+}
+
+.top-loop();
+
+/* BOTTOM */
+.bottom { 
+	bottom : 0px;
+}
+.bottom-loop (@i:1, @x:@line) when (@i <= @line){
+	.bottom-@{i}{
+		@bottom : @i * (1/@line) * 100;
+		bottom : unit(@bottom, %);
+	}
+	.bottom-loop(@i + 1,@x - 1);
+}
+
+.bottom-loop();
+
+.left{
+	left:0px;
+}
+.right{
+	right:0px;
+}
