@@ -55,10 +55,10 @@ $.fullmsg = {
   outro : function (){
     msgContainer = $("#fullmsg");
      setTimeout(function(){
-      msgContainer.removeClass("open");
+      msgContainer.addClass("putToBottom");
         setTimeout(function(){
           msgContainer.remove();  
-        },750);
+        },2000);
     },100);
   }
 };

@@ -1,4 +1,5 @@
 <?php 
+    include('../bootstrap.php');
     include('../app-controller/app-controller.php');
 
     $c = new controller();
@@ -14,7 +15,7 @@
         </head>
         <body id="page" class="<?php //uisession(); ?>">
         <?php if (isset($_GET["intro"])&&$_GET["intro"]=="true"): ?>
-            <div id="fullmsg" class="fullmsg-container open outro"> </div>
+            <div id="fullmsg" class="fullmsg-container open outro"><p><?php echo $_SESSION["fullmsg"]; ?></p></div>
         <?php endif ?>
         <?php 
         	$c->header();

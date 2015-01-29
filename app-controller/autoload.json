@@ -21,7 +21,6 @@
         "lib":[
             "bootstrap-slider-master",
             "mobile-events"
-
         ]
     },
 
@@ -54,16 +53,27 @@
     },
 
     "lib":{
+        "Doctrine"  :{
+            "php"   :[
+                "bin/doctrine"
+            ],
+            "css"   :[],
+            "js"    :[]
+        },
         "tcpdf"     :{
             "php"   :[
                 "class-mypdf"
-            ]
+            ],
+            "css"   :[],
+            "js"    :[]
         },
         "lessphp"   : {
             "doc"   : "http://leafo.net/lessphp/",
             "php"   : [
                 "lessc.inc.php"
-            ]
+            ],
+            "css"   :[],
+            "js"    :[]
         },
         "codemirror":{
             "doc"   : "http://codemirror.net/doc/manual.html",
@@ -101,13 +111,15 @@
         },
         "mobile-events":{
             "doc"   : "https://github.com/benmajor/jQuery-Touch-Events",
-            "css"   :[],
-            "js"    :[
+            "php"   : [],
+            "css"   : [],
+            "js"    : [
                 "jquery.mobile-events.min"
             ]
         },
         "plupload":{
             "doc"   : "http://www.plupload.com/docs/",
+            "php"   : [],
             "css"   :[],
             "js"    :[
                 "js/plupload.full.min",
@@ -124,6 +136,7 @@
         },
         "bootstrap-slider-master":{
             "doc"   : "https://github.com/seiyria/bootstrap-slider",
+            "php"   : [],
             "css"   : [
                 "css/bootstrap-slider"
             ],
@@ -133,6 +146,7 @@
         },
         "jquery-ui":{
             "doc"   : "http://api.jqueryui.com/",
+            "php"   : [],
             "css"   : [
                 "jquery-ui.min",
                 "jquery-ui.structure.min"
@@ -142,7 +156,7 @@
             ]
             },
         "spectrum":{
-           
+            "php"   : [],
             "css"   : [
                 "spectrum"
             ],
@@ -151,14 +165,17 @@
             ]
             },
         "tinyMCE":{
+            "php"   : [],
             "css"   :[],
             "js"    :[]
         },
         "circleMenu":{
+            "php"   : [],
             "css"   :[],
             "js"    :[]
         },
         "apppad"    :{
+            "php"   : [],
             "css"   :[],
             "js"    :[]
         }

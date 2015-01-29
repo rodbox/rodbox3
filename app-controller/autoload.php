@@ -23,6 +23,7 @@ class autoload
         
         $this->config = $json;
         $this->getMod();
+        $this->getLibPhpInit();
     }
     
     /*** JS ***/
@@ -82,7 +83,8 @@ class autoload
     
     function getCss() {
         $json = $this->config;
-        foreach ($json["init"]["css"] as $keyInitApp => $initApp) {
+        $each = (isset($json["init"]["css"]))?$json["init"]["css"]:[];
+        foreach ($each as $keyInitApp => $initApp) {
             $this->cssInit($initApp);
         }
         
@@ -91,7 +93,8 @@ class autoload
             $this->getLibCss($initLib);
         }
         
-        foreach ($json["css"] as $keyApp => $listApp) {
+        $each = (isset($json["css"]))?$json["css"]:[];
+        foreach ($each as $keyApp => $listApp) {
             foreach ($listApp as $keyFile => $valueFile) {
                 $this->css($keyApp, $valueFile);
             }
@@ -100,8 +103,8 @@ class autoload
     
     function getLibCss($name) {
         $json = $this->config;
-        
-        foreach ($json["lib"][$name]["css"] as $keyFile => $valueFile) {
+        $each = (isset($json["lib"][$name]["css"]))?$json["lib"][$name]["css"]:[];
+        foreach ($each as $keyFile => $valueFile) {
             $this->cssLib($name, $valueFile);
         }
     }
@@ -114,8 +117,8 @@ class autoload
     }
     function getLibPhp($name) {
         $json = $this->config;
-        
-        foreach ($json["lib"][$name]["php"] as $keyFile => $valueFile) {
+        $each = (isset($json["lib"][$name]["php"]))?$json["lib"][$name]["php"]:[];
+        foreach ($each as $keyFile => $valueFile) {
             $this->phpLib($name, $valueFile);
         }
     }
@@ -130,7 +133,12 @@ class autoload
             $this->mod($initMod);
         }
     }
-
+    function getLibPhpInit(){
+        $json = $this->config;
+        foreach ($json["init"]["lib"] as $key => $value){
+            $this->getLibPhp($value);
+        }
+    }
 
 } 
 

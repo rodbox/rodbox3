@@ -1388,25 +1388,34 @@ body.no-bgi {
   -ms-transition: all 1250ms ease-in;
   -o-transition: all 1250ms ease-in;
   transition: all 1250ms ease-in;
-  -webkit-transition-delay: 1500;
-  -moz-transition-delay: 1500;
-  -ms-transition-delay: 1500;
-  -o-transition-delay: 1500;
-  transition-delay: 1500;
+  -webkit-transition-delay: 1300;
+  -moz-transition-delay: 1300;
+  -ms-transition-delay: 1300;
+  -o-transition-delay: 1300;
+  transition-delay: 1300;
   background-color: #ebe8e6 !important;
   background-color: transparent;
+  -webkit-transition: all 1250ms cubic-bezier(0.81, 0, 0.74, 1);
+  /* older webkit */
+  -webkit-transition: all 1250ms cubic-bezier(0.81, -0.4, 0.74, 1.005);
+  -moz-transition: all 1250ms cubic-bezier(0.81, -0.4, 0.74, 1.005);
+  -o-transition: all 1250ms cubic-bezier(0.81, -0.4, 0.74, 1.005);
+  transition: all 1250ms cubic-bezier(0.81, -0.4, 0.74, 1.005);
+  /* custom */
 }
 #fullmsg.outro {
-  -webkit-transition: all 650ms ease-out;
-  -moz-transition: all 650ms ease-out;
-  -ms-transition: all 650ms ease-out;
-  -o-transition: all 650ms ease-out;
-  transition: all 650ms ease-out;
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  -ms-transition-delay: 0s;
-  -o-transition-delay: 0s;
-  transition-delay: 0s;
+  -webkit-transition: all 1050ms ease-in-out;
+  -moz-transition: all 1050ms ease-in-out;
+  -ms-transition: all 1050ms ease-in-out;
+  -o-transition: all 1050ms ease-in-out;
+  transition: all 1050ms ease-in-out;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-box-shadow: 0 0 150px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 150px 0 rgba(0, 0, 0, 0.8);
 }
 #fullmsg.open {
   opacity: 1;
@@ -1416,18 +1425,16 @@ body.no-bgi {
   top: calc(50% - 75px);
 }
 #fullmsg.open p.outro {
-  -webkit-transition: all 1000ms ease;
-  -moz-transition: all 1000ms ease;
-  -ms-transition: all 1000ms ease;
-  -o-transition: all 1000ms ease;
-  transition: all 1000ms ease;
+  -webkit-transition: all 900ms linear;
+  -moz-transition: all 900ms linear;
+  -ms-transition: all 900ms linear;
+  -o-transition: all 900ms linear;
+  transition: all 900ms linear;
   -webkit-transition-delay: 1150ms;
   -moz-transition-delay: 1150ms;
   -ms-transition-delay: 1150ms;
   -o-transition-delay: 1150ms;
   transition-delay: 1150ms;
-  top: 75%;
-  opacity: 0;
 }
 #fullmsg p {
   opacity: 0;
@@ -1448,6 +1455,13 @@ body.no-bgi {
   line-height: 100px;
   vertical-align: middle;
   color: #bfbdb5 !important;
+}
+#fullmsg.putToBottom {
+  -moz-transform: translateX(110%) scale(0.7) rotate(15deg);
+  -webkit-transform: translateX(110%) scale(0.7) rotate(15deg);
+  -o-transform: translateX(110%) scale(0.7) rotate(15deg);
+  -ms-transform: translateX(110%) scale(0.7) rotate(15deg);
+  transform: translateX(110%) scale(0.7) rotate(15deg);
 }
 #formLogin {
   -webkit-transition: all 1250ms cubic-bezier(0.81, 0, 0.74, 1);
