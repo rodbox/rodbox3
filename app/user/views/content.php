@@ -3,7 +3,7 @@
 <h1>Inscription</h1>
 <hr>
 <div class="msg-info">
-	Vous avez déja un compte <?php $c->routePage("user_page_login","Se connecter"); ?>
+	<?php $c->msg("user","have_account") ?> <?php $c->routePage("user_page_login","Se connecter"); ?>
 </div>
 	<?php 
 	$form  =  $c->form("user","formUser");

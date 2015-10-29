@@ -1,11 +1,11 @@
 <?php
 
 $paletteList = $json["palettes-list"];
-$palette = json_decode(file_get_contents(DIR_PALETTE.'/'.$paletteList.'/'.$paletteList.'.json'),true);
+
+$paletteDir = DIR_PALETTES.'/'.$paletteList.'/'.$paletteList.'.json';
+$palette = $c->getJson($paletteDir);
 $suf = $palette["suf"];
 $palette = $palette["palette"];
-
-
 
 function hexToRgb($hex) {
    $hex = str_replace("#", "", $hex);

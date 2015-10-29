@@ -1,13 +1,13 @@
 <!-- BEGIN COL : col-md-4 col-lg-4  -->
 <div class="col-md-4 col-lg-4 bg-8 c-7 line-9 overflow-auto">
-	<?php  include('views/paper-tool-editor.php');?>
+	<?php  $c->view('paper','paper-tool-editor');?>
 </div>
 <!-- END COL : col-md-4 col-lg-4  -->
 
 <!-- BEGIN COL : col-md-5 col-lg-5  -->
 <div class="col-md-5 col-lg-5 bg-2 line-6 no-marg no-pad">
 <div id="papermenu">
-	<?php  include('views/papermenu.php');?>
+	<?php  $c->view('paper','papermenu');?>
 </div>
 <div class="text-center top-1 line-2 relative">
 	<canvas id="myCanvas"></canvas>
@@ -16,7 +16,7 @@
 <!-- END COL : col-md-5 col-lg-5  -->
 <!-- BEGIN COL : col-md-3 col-lg-3  -->
 <div class="col-md-3 col-lg-3 bg-8 line-6 ">
-	<?php  include('views/paper-preset-editor.php');?>
+	<?php  $c->view('paper','paper-preset-editor');?>
 </div>
 <!-- END COL : col-md-3 col-lg-3  -->
 

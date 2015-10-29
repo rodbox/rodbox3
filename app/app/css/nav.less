@@ -1,0 +1,29 @@
+@import "var.less";
+@import "function.less";
+@import "colors.less";
+@import "grid.less";
+@import "function.less";
+
+@quicksidebarW : 350;
+
+#quicksidebar{
+	.animate() !important;
+	display: inline-block;
+	position:fixed;
+	right: unit(0 - @quicksidebarW,px);
+	top:50px;
+	height: calc(~"100% - 50px");
+	width: unit(@quicksidebarW,px);
+	.bg-8;
+	.c-3;
+}
+
+body.quicksidebar-active{
+	#quicksidebar{
+		-moz-transform: translateX(unit(0 - @quicksidebarW,px));
+		-webkit-transform: translateX(unit(0 - @quicksidebarW,px));
+		-o-transform: translateX(unit(0 - @quicksidebarW,px));
+		-ms-transform: translateX(unit(0 - @quicksidebarW,px));
+		transform: translateX(unit(0 - @quicksidebarW,px));
+	}
+}

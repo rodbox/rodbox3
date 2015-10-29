@@ -1,0 +1,18 @@
+{
+	"CV_page_index":{
+		"init":{
+			"lib":["tweenmax"]
+		},
+        "js":{
+        	"CV":[
+        		"app"
+        	]
+        },
+        "css":{
+        	"CV":[
+                        "style",
+        		"circle-menu"
+        	]
+        }
+	}
+}

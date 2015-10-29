@@ -1,20 +1,49 @@
 <?php
-include('../../include.php');
+$r = ["response"=>false];
 // Include the main TCPDF library (search for installation path).
 // require_once('../plugins/class-mypdf.php');
-$autoload->getLibPhp("tcpdf");
+// $appAutoload->getLibPhp("tcpdf");
 
+// $loader = require_once "../vendor/autoload.php";
+// use use Doctrine\ORM\EntityManage;;
+
+// use \com\tecnick\tcpdf;
+
+// $html = "tptpt";
+
+// echo $html;
+
+
+
+// use \Imagine;
+
+
+// $img = new Imagine\Gd\Imagine();
+
+// echo"<pre>";
+// print_r($loader);
+// echo"</pre>";
+
+// $size    = new Imagine\Image\Box(40, 40);
+
+// $mode    = Imagine\Image\ImageInterface::THUMBNAIL_INSET;
+// // or
+// $mode    = Imagine\Image\ImageInterface::THUMBNAIL_OUTBOUND;
+
+// $img->open(DIR_MY."/log.jpg")
+//     ->thumbnail($size, $mode)
+//     ->save(DIR_MY."/log-40.jpg");
 
 
 
 $tmpRand = substr( md5(rand()), 0, 8);
-$tmpFile ="tmp-".$tmpRand.".php";
+$tmpFile = DIR_TMP."/tmp-".$tmpRand.".php";
 
 
-$models = $_GET["models"];
+$models = $_GET["doc-list"];
 
 if($models!=""){
-$dir = realpath("../models/".$models);
+$dir = DIR_DOC."/".$models;
 $jsonDir = $dir."/".$models.".json";
 $pdfDir = $dir."/".$models.".pdf";
 $json = json_decode(file_get_contents($jsonDir),true);
@@ -40,7 +69,8 @@ $html .= $css;
 $html .= "</style>";
 
 $paletteList = $json["palettes-list"];
-$palette = json_decode(file_get_contents(DIR_PALETTE.'/'.$paletteList.'/'.$paletteList.'.json'),true);
+$paletteDir = DIR_PALETTES.'/'.$paletteList.'/'.$paletteList.'.json';
+$palette = $c->getJson($paletteDir);
 
 ob_start();
     file_put_contents($tmpFile,stripcslashes($json["myTextarea"]));
@@ -171,4 +201,6 @@ $pdf->Output($pdfDir, 'FI');
 //============================================================+
 // END OF FILE
 //============================================================+
+//
+// echo "oflkm";
 }

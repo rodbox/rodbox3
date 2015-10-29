@@ -2,7 +2,7 @@
 
 <ul class="no-pad paper-edit-tool">
 <li>
-	<div class="block margv-5"><?php  include('views/toollist.php');?></div>
+	<div class="block margv-5"><?php  $c->view('paper','toollist','toollist');?></div>
 	<a href="#" id="new-tool" class=" btn btn-xs btn-primary" data-form=".save-tool"> New</a>
 	<a href="exec/edit-tool.php" id="open-tool" class="btn btn-xs btn-primary " data-form=".save-tool">open</a>
 	<a href="exec/save-tool.php?save=save_as" class="save-as btn btn-xs btn-primary" data-form=".save-tool"><i class="glyphicon glyphicon-floppy-disk"></i> save as</a>

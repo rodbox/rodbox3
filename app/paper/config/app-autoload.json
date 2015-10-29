@@ -1,0 +1,21 @@
+{
+	"paper_page_index":{
+		"init":{
+			"lib":[
+                "codemirror",
+            	"paperjs"
+        	]
+		},
+        "js":{
+        	"paper":[
+                "app-codemirror",
+        		"app"
+        	]
+        },
+        "css":{
+        	"paper":[
+        		"style"
+        	]
+        }
+	}
+}

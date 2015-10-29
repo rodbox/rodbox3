@@ -2,6 +2,17 @@
     "_tool__page_index": [
         "_tool_",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
+    ],
+    "_tool__page_index-icon": [
+        "_tool_",
+        "index-icon",
+        "page",
+        [
+            "USER"
+        ]
     ]
 }

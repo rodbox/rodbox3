@@ -68,6 +68,7 @@ class file extends controller {
         $filter     = array(".", "..","__MACOSX", "nbproject", "_notes", ".DS_Store", ".komodotools", "_tmp"); //list des nom de fichier ou de dossier a ne pas indexer
         $list       = scandir($dir); // on scan le dossier
         $r          = array_diff($list, $filter); // on filtre le resultat
+        $d          = [];
         foreach ($r as $val) {
             $srcEval = $dir . "/" . $val;
 
@@ -85,20 +86,24 @@ class file extends controller {
 
     static function file_list($dir,$suffix="") {
         $filter     = array(".", "..","__MACOSX", "nbproject", "_notes", ".DS_Store", ".komodotools", "_tmp"); //list des nom de fichier ou de dossier a ne pas indexer
-        $list       = scandir($dir); // on scan le dossier
-        $r          = array_diff($list, $filter); // on filtre le resultat
+        if(file_exists($dir)){
+            $list       = scandir($dir); // on scan le dossier
+            $r          = array_diff($list, $filter); // on filtre le resultat
 
-        foreach ($r as $key => $val) { //on parcour chaque element
+            foreach ($r as $key => $val) { //on parcour chaque element
 
-            if (is_dir($dir . "/" . $val)) {
-                unset($r[$key]); // on supprime le nom du dossier dans la liste de resultat car elle utilisé en clé pour les sous dossiers
-                
+                if (is_dir($dir . "/" . $val)) {
+                    unset($r[$key]); // on supprime le nom du dossier dans la liste de resultat car elle utilisé en clé pour les sous dossiers
+                }
+                else
+                    $r[$key] = basename($val,$suffix);
             }
-            else
-                $r[$key] = basename($val,$suffix);
-        }
 
-        return $r;
+            return $r;
+        }
+        else{
+            return $r=[];
+        }
     }
 
     static function file_list_mono($dir, $suffix = null) {

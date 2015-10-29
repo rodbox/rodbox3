@@ -1,0 +1,20 @@
+{
+    "req": "",
+    "mail": "",
+    "int": "",
+    "reg": "",
+    "alpha_num": "",
+    "min": "",
+    "max": "",
+    "equal": "",
+    "url": "",
+    "ip": "",
+    "tel": "",
+    "userLabel": "",
+    "userLastnameLabel": "",
+    "userFirstnameLabel": "",
+    "userCivLabel": "",
+    "userPasswordLabel": "",
+    "userPasswordConfirmLabel": "",
+    "userMailLabel": ""
+}

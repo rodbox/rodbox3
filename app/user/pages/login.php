@@ -12,6 +12,11 @@
 		
 		$form->getItem("User");
 		$form->getItem("UserPassword");
+		?>
+<div class="rememeber-me">
+	<?php $form->getItem("UserRemember","","",false); ?>
+</div>
+		<?php
 		$form->getItem("submit");
 	?>
 </div>

@@ -2,6 +2,10 @@
     "appinfo_page_index": [
         "appinfo",
         "index",
-        "page"
+        "page",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ]
 }

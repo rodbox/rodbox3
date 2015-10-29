@@ -1,0 +1,24 @@
+{
+	"appfile_page_index":{
+		"init":{
+			"lib":[
+            	"codemirror"
+        	]
+		},
+        "js":{
+        	"appfile":[
+                "jquery-app",
+        		"app",
+        		"appnav"
+        	]
+        },
+        "css":{
+        	"appfile":[
+        		"style",
+        		"appnav",
+        		"app-circlemenu"
+        	]
+        }
+	}
+
+}

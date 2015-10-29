@@ -85,9 +85,53 @@
 	-o-transition-delay: @delay;
 	transition-delay: @delay;
 }
+
+.scale(@scale:1.2){
+    -moz-transform: scale(@scale);
+    -webkit-transform: scale(@scale);
+    -o-transform: scale(@scale);
+    -ms-transform: scale(@scale);
+    transform: scale(@scale);
+}
+
+.rotate(@rotate:45){
+    -moz-transform: rotate(unit(@rotate,deg));
+    -webkit-transform: rotate(unit(@rotate,deg));
+    -o-transform: rotate(unit(@rotate,deg));
+    -ms-transform: rotate(unit(@rotate,deg));
+    transform: rotate(unit(@rotate,deg));
+}
+.transX(@transX:150,@unit:px){
+    -moz-transform: translateX(unit(@transX,@unit));
+    -webkit-transform: translateX(unit(@transX,@unit));
+    -o-transform: translateX(unit(@transX,@unit));
+    -ms-transform: translateX(unit(@transX,@unit));
+    transform: translateX(unit(@transX,@unit));
+}
+.transY(@transY:150,@unit:px){
+    -moz-transform: translateX(unit(@transY,@unit));
+    -webkit-transform: translateX(unit(@transY,@unit));
+    -o-transform: translateX(unit(@transY,@unit));
+    -ms-transform: translateX(unit(@transY,@unit));
+    transform: translateX(unit(@transY,@unit));
+}
+
+.trans3d (@x, @y: 0, @z: 0) {
+    -webkit-transform:       translate3d(@x, @y, @z);
+    -moz-transform:      translate3d(@x, @y, @z);
+    -ms-transform:       translate3d(@x, @y, @z);
+    -o-transform:        translate3d(@x, @y, @z);
+}
+.perspective (@value: 1000) {
+    -webkit-perspective:    @value;
+    -moz-perspective:   @value;
+    -ms-perspective:    @value;
+    perspective:        @value;
+}
+
 .spin(){
 
-	-webkit-animation: spin 0.6s infinite linear;
+    -webkit-animation: spin 0.6s infinite linear;
     -o-animation: spin 0.6s infinite linear;
     -ms-animation: spin 0.6s infinite linear;
     -moz-animation: spin 0.6s infinite linear;
@@ -125,3 +169,62 @@
         transform: rotate(360deg);
     }
 }
+
+.balance(@amplitudeX:10,@amplitudeY:0,@amplitudeZ:0,@time:4){
+    .perspective();
+    -webkit-animation: balance unit(@time,s) infinite linear;
+    -o-animation: balance unit(@time,s) infinite linear;
+    -ms-animation: balance unit(@time,s) infinite linear;
+    -moz-animation: balance unit(@time,s) infinite linear;
+    animation: balance unit(@time,s) infinite linear;
+
+    -webkit-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    animation-direction: alternate;
+
+    -webkit-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    .trans3d(30,30,150);
+
+    @-webkit-keyframes balance {
+    from {
+        -webkit-transform: rotateZ(unit(0-@amplitudeZ,deg)) rotateX(unit(0-@amplitudeX,deg)) rotateY(unit(0-@amplitudeY,deg));
+    }to {
+        -webkit-transform: rotateZ(unit(@amplitudeZ,deg)) rotateX(unit(@amplitudeX,deg)) rotateY(unit(@amplitudeY,deg));
+    }
+}
+@-moz-keyframes balance {
+    from {
+        -moz-transform: rotateZ(unit(0-@amplitudeZ,deg)) rotateX(unit(0-@amplitudeX,deg)) rotateY(unit(0-@amplitudeY,deg));
+    }to {
+        -moz-transform: rotateZ(unit(@amplitudeZ,deg)) rotateX(unit(@amplitudeX,deg)) rotateY(unit(@amplitudeY,deg));
+    }
+}
+@-ms-keyframes balance {
+    from {
+        -ms-transform: rotateZ(unit(0-@amplitudeZ,deg)) rotateX(unit(0-@amplitudeX,deg)) rotateY(unit(0-@amplitudeY,deg));
+    }to {
+        -ms-transform: rotateZ(unit(@amplitudeZ,deg)) rotateX(unit(@amplitudeX,deg)) rotateY(unit(@amplitudeY,deg));
+    }
+}
+@-o-keyframes balance {
+    from {
+        -o-transform: rotateZ(unit(0-@amplitudeZ,deg)) rotateX(unit(0-@amplitudeX,deg)) rotateY(unit(0-@amplitudeY,deg));
+    }to {
+        -o-transform: rotateZ(unit(@amplitudeZ,deg)) rotateX(unit(@amplitudeX,deg)) rotateY(unit(@amplitudeY,deg));
+    }
+}
+@keyframes balance {
+    from {
+        transform: rotateZ(unit(0-@amplitudeZ,deg)) rotateX(unit(0-@amplitudeX,deg)) rotateY(unit(0-@amplitudeY,deg));
+    }to {
+        transform: rotateZ(unit(@amplitudeZ,deg)) rotateX(unit(@amplitudeX,deg)) rotateY(unit(@amplitudeY,deg));
+    }
+}
+}
+

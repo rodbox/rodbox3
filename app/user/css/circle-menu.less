@@ -1,0 +1,199 @@
+@import "../../app/css/function.less";
+@elem: 9, 3;
+
+@radius: 115;
+@size : 24;
+@shadowSize : 0;
+
+@sizeAngle: @radius - (@size/2);
+
+@startTop: -0.5*pi();
+@startTopRight: -0.25*pi();
+@startTopLeft: -0.75*pi();
+@startBottomRight: 0.25*pi();
+@startBottomLeft: 0.75*pi();
+@startLeft: pi();
+@startRight: 2*pi();
+@startBottom: 0.5*pi();
+
+// @circleColor : rgba(191,189,181,0.2);
+@circleColor : rgba(36,36,36,0);
+@aColor : #bfbdb5;
+@aColorHover : #fff;
+@start:  @startBottom,@startTop;
+
+
+.rotate(@deg){
+	-moz-transform: rotate(unit(@deg,deg));
+	-moz-transform-origin:0% 50%;
+	-webkit-transform: rotate(unit(@deg,deg));
+	-webkit-transform-origin:0% 50%;
+	-o-transform: rotate(unit(@deg,deg));
+	-o-transform-origin:0% 50%;
+	-ms-transform: rotate(unit(@deg,deg));
+	-ms-transform-origin:0% 50%;
+	transform: rotate(unit(@deg,deg));
+	transform-origin:0% 50%;
+}
+
+
+/* nb Elem  */
+.animate(@time:125ms){
+	-webkit-transition: all @time cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-moz-transition: all @time cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-ms-transition: all @time cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-o-transition: all @time cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition: all @time cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.shadow(@size){
+	-webkit-box-shadow: 0 0 0 unit(@shadowSize,px) rgba(191,189,181,0.05);
+	box-shadow: 0 0 0 unit(@shadowSize,px) rgba(191,189,181,0.05);
+}
+
+.translate(@x, @y:0,@scale:1){
+	-webkit-transform:       translate(unit(@x,px), unit(@y,px));
+	-moz-transform: 	 translate(unit(@x,px), unit(@y,px));
+	-ms-transform: 		 translate(unit(@x,px), unit(@y,px));
+	-o-transform: 		 translate(unit(@x,px), unit(@y,px));
+
+}
+
+.scale(@scale:1){
+	-moz-transform: scale(@scale);
+	-webkit-transform: scale(@scale);
+	-o-transform: scale(@scale);
+	-ms-transform: scale(@scale);
+	transform: scale(@scale);
+}
+
+.origin (@x:center, @y:center) {
+	-webkit-transform-origin: @x @y;
+	-moz-transform-origin:    @x @y;
+	-ms-transform-origin:     @x @y;
+	-o-transform-origin:      @x @y;
+}
+
+.circle{	
+	&.centerX {
+		left: calc(~"50% - "unit(@radius/2-@size*2,px));
+	}
+	display: inline-block;
+	// z-index: 1060;
+	border-radius: 50%;
+	
+	width: unit(@radius*2,px);
+	height: unit(@radius*2,px);
+
+
+
+	a {
+		color:@aColor !important;
+	}
+	&.open {
+		& .circle-center{
+			.animate(255ms);
+			.scale(1);
+			.shadow(@size);
+		}
+		& .elem{
+			.animate(700ms);
+			opacity: 1;
+			color:@aColor;
+			text-align: center;
+
+				a{
+					vertical-align: middle;
+					text-decoration: none;
+					display: inline-block;
+					outline: none;
+					line-height: unit(@size,px);
+					width: unit(@size,px);
+					color:@aColor;
+					.animate(125ms);
+					&:hover{
+						color:@aColorHover !important;
+					}
+				}
+			
+		}
+	}
+
+
+	& .elem{
+		.animate(700ms);
+		width: unit(@size,px);
+		height: unit(@size,px);
+		line-height: unit(@size,px);
+		vertical-align: middle;
+		text-align: center;
+		position: absolute;
+
+		color: #fff;
+		opacity: 0;
+		z-index: 901;
+
+	}
+
+	& .circle-center{
+		.animate(125ms);
+		.scale(0);
+		.shadow(0);
+		background-color: @circleColor;
+		width: unit(@radius*2,px);
+		line-height: unit(@radius*2,px);
+		text-align: center;
+		// font-size: unit(@radius/2,px);
+		font-size: unit(@radius/4,px);
+		vertical-align: middle;
+		height: unit(@radius*2,px);
+		border-radius: 50%;
+
+		display: inline-block;
+		z-index: 900;
+		& a{
+			opacity: 0.2;
+			text-decoration: none;
+			color:@aColor !important;
+			font-weight: bolder;
+
+		}
+	}
+}
+
+/* Elem */
+
+.mixin-loop (@i, @y) when (@i > 0) {
+	@step: 2*pi()/extract(@elem, @y);
+	@ref:(0-@size/2) + @radius + @size * (@y - 1);
+	@circleStart: extract(@start, @y);
+
+	.circle .circle-@{y}.pos-@{i} {
+		@center:(@radius - (@size / 2) );
+		.translate(@center,@center,0.8);
+	}
+
+	.circle.open .circle-@{y}.pos-@{i}{
+		@top:ceil(@ref * sin(@angle)+@sizeAngle);
+		@left:ceil(@ref * cos(@angle)+@sizeAngle);
+
+		.translate(@left,@top);
+
+		@angle: (@step * @i) + @circleStart - @step ;
+		a {
+			z-index: 1500;
+		}
+		
+	}
+
+
+	.mixin-loop(@i - 1,@y);
+}
+
+.circle-loop (@y:1) when (@y <= length(@elem)){
+	@val:extract(@elem, @y);
+ 	.mixin-loop(@val, @y);
+ 	.circle-loop (@y + 1);
+}
+.circle-loop ();
+

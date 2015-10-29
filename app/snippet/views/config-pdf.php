@@ -4,7 +4,7 @@
       </div>
       <div id="modal-body"  class="modal-body">
 
-<form action="exec/config-save.php" id="config-pdf">
+<form action="<?php echo $c->routeExecUrl('snippet_exec_pdf'); ?>" id="config-pdf">
 <table class="table text-center">
 	<tr>
 		<td colspan="2">

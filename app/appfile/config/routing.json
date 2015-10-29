@@ -2,36 +2,73 @@
     "appfile_page_index": [
         "appfile",
         "index",
-        "page"
+        "page",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appfile_exec_create-app": [
         "appfile",
         "create-app",
-        "exec"
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appfile_exec_create": [
         "appfile",
         "create",
-        "exec"
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appfile_exec_edit": [
         "appfile",
         "edit",
-        "exec"
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appfile_exec_list": [
         "appfile",
         "list",
-        "exec"
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appfile_exec_remove": [
         "appfile",
         "remove",
-        "exec"
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appfile_exec_save": [
         "appfile",
         "save",
-        "exec"
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "appfile_exec_addmsg": [
+        "appfile",
+        "addmsg",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ]
 }

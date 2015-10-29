@@ -2,6 +2,27 @@
     "app_page_index": [
         "app",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
+    ],
+    "app_exec_calendar_upd": [
+        "app",
+        "calendar_upd",
+        "exec",
+        [
+            "USER",
+            "MASTER"
+        ]
+    ],
+    "app_view_event_edit": [
+        "app",
+        "event_edit",
+        "view",
+        [
+            "USER",
+            "MASTER"
+        ]
     ]
 }

@@ -3,6 +3,16 @@
 @import "colors.less";
 @import "grid.less";
 @import "function.less";
+@import "nav.less";
+@import "portlet.less";
+@import "form.less";
+
+@font-face {
+	font-family: 'frente';
+	src:url('../../app/css/frente/FrenteH1-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
 
 
 html{
@@ -18,12 +28,19 @@ body{
     padding: 50px 0px 0px 0px!important;
     height: calc(~"100%") !important;
     width: 100%;
+
 }
 
 .scroll-touch(){
 	-webkit-overflow-scrolling: touch;
 }
 
+.scroll-auto{
+	overflow-y: auto;
+}
+.opacity{
+	.opacity(0.5);
+}
 /*** Display ***/
 .block{display:block;}
 .inline{display:inline;}
@@ -43,7 +60,10 @@ body{
 .no-border{
 	border-width: 0px !important;
 }
-
+.no-shadow{
+	-webkit-box-shadow:inset 0 0 0 0 transparent;
+	box-shadow:inset 0 0 0 0 transparent;
+}
 .no-input-shadow{
 	-webkit-appearance: none;
 }
@@ -422,8 +442,7 @@ input[type="radio"]{
 
 
 .onLock{
-	.animate();
-	.opacity() !important;;
+
 }
 
 
@@ -471,7 +490,19 @@ label.marg-label{width: 65px !important;}
 
 }
 
-
+.modal{
+	z-index: 1080 !important;
+}
+.modal-backdrop.in{
+	opacity: 0.7;
+}
+.dropdown-menu hr{ 
+	margin: 0px !important;
+	border-color: extract(@colors,3);
+}
+.cw{
+	opacity: 0.5;
+}
 
 
 .php-error{
@@ -487,5 +518,19 @@ label.marg-label{width: 65px !important;}
 .spin{
 	.spin();
 }
+#bodyProtect {
+	position: fixed;
+	top:55px;
+	right:10px;
+	display: none;
+}
 
-
+#modal-title{
+  font-weight: bolder;
+}
+a{
+	&,&:hover,&:active,&:focus{
+		text-decoration: none !important;	
+	}
+	
+}

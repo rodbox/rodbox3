@@ -18,15 +18,7 @@ class template extends controller{
         return $content;
     }
 
-    function keyValContent($data, $contentModel) {
-        foreach ($data as $key => $val) {
-            $find[] = "[" . $key . "]";
-            $replace[] = $val;
-        }
-        $content = str_replace($find, $replace, $contentModel);
 
-        return $content;
-    }
 
 /* recupere le contenue de fileModel replace les $data[KEY] par $data[KEY]value 
 et enregistre le fichier dans foleTarget.
@@ -50,8 +42,9 @@ et enregistre le fichier dans foleTarget.
  *
  **/
 
-    function templateFile($templateFile, $targetDir, $newFileName = "") {
+    function templateFile($templateFile, $targetDir, $newFileName = "", $replace="",$forceReplaceIfExist=false) {
         $src = DIR_TEMPLATES . "/files/" . $templateFile;
+
         $info = pathinfo($templateFile);
 
         if ($newFileName == "") {
@@ -59,12 +52,17 @@ et enregistre le fichier dans foleTarget.
         }
 
         $dest = $targetDir . "/" . $newFileName . "." . $info["extension"];
+        if (!file_exists($dest)||$forceReplaceIfExist) {
+            if(copy($src, $dest)){
+                if(is_array($replace)){
+                    self::keyValFileContent($replace, $dest);
+                }
 
-        if (!file_exists($dest)) {
-            if(copy($src, $dest))
+
                 return ["eval"=>true,"newfile"=>$newFileName . "." . $info["extension"]];
+            }
         }
-      else return false;
+      else return ["eval"=>false];
     }
 
 /* Creer un dossier a partir d'un template
@@ -161,10 +159,13 @@ il peux remplacer des element dans un fichiers pointer dans le array $replace
                     }
                     // S'il sagit d'un fichier, on le copue simplement
                     elseif ($file != '..' && $file != '.'){
-                        if (array_key_exists($fileTarget, $rename))
+                        if (is_array($rename) && array_key_exists($fileTarget, $rename))
                             $fileTarget = $rename[$fileTarget];
-
-                        self::keyValFileContent($replace, $fileModel,$fileTarget);
+                        
+                        if (is_array($replace))
+                            self::keyValFileContent($replace, $fileModel,$fileTarget);
+                        else
+                            copy($fileModel,$fileTarget);
                     }
                 }
 

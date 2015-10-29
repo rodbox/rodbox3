@@ -1,36 +1,35 @@
 <?php 
-    include('../bootstrap.php');
+session_start();
     include('../app-controller/app-controller.php');
 
     $c = new controller();
-    $autoload = new autoload($c->app);
+    set_error_handler('errorManager');
 
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <?php $autoload->getCss();?>
+        <?php $c->autoload->getCss();?>
         <title> <?php $c->title(); ?> </title>
         </head>
-        <body id="page" class="<?php //uisession(); ?>">
-        <?php if (isset($_GET["intro"])&&$_GET["intro"]=="true"): ?>
-            <div id="fullmsg" class="fullmsg-container open outro"><p><?php echo $_SESSION["fullmsg"]; ?></p></div>
-        <?php endif ?>
-        <?php 
-        	$c->header();
-        ?>
+        <body id="page" class="">
+        <ul class='flash-container'>
+        <?php $c->getFlash(); ?>
+        </ul>
+        <?php $c->header(); ?>
+
         <!-- START CONTENT -->
-        <div class="page">
+        <div class="page cover bgp bg-fixed" style="background-image: url(<?php echo WEB_USERS."/1/bg-3.jpg"; ?>);">
             <?php $c->page(); ?>
         </div>
         <!-- END CONTENT -->
-               
+        <!-- START SIDEBARD -->
+            <?php $c->quicksidebar(); ?>
+        <!-- END SIDEBARD -->
+        <!-- MODAL Include -->
+        <?php $c->view("app","bootstrap/modal"); ?>
+        <?php $c->view("app","footer"); ?>
         <i id="bodyProtect" class="icomoon-warning2 "></i>
-
-        <?php 
-            $autoload->getJs();
-        ?>
-
+        <?php $c->autoload->getJs(); ?>
     </body>
 </html>

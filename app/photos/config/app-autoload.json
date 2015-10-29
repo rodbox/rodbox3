@@ -1,0 +1,14 @@
+{
+        "photos_page_index":{
+                "js":{
+                        "photos":[
+                                "app"
+                        ]
+                },
+                "css":{
+                        "photos":[
+                                "style"
+                        ]
+                }
+        }
+}

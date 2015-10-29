@@ -1,5 +1,5 @@
 <?php extract($_GET);
-$src = realpath("../snippets")."/".$snippetname.".sublime-snippet";
+$src = DIR_SNIPPETS."/".$snippetname.".sublime-snippet";
 
 $infotype = (unlink($src))?"success":"error";
 
@@ -9,6 +9,6 @@ $r = array(
             'data'=>''
         );
 
-echo json_encode($r);
+
 
 ?>

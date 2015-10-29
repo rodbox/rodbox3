@@ -1,10 +1,3 @@
-
-<?php 
-
-$d = scandir(realpath("./snippets"));
-$d = array_diff($d, array(".","..",".DS_Store",".sublime-snippet"));
-  ?>
-
 <form action="#" id="form-snippets-list">
 
 <ul class="no-padh snippets-list" id="snippets-list">
@@ -16,7 +9,7 @@ $d = array_diff($d, array(".","..",".DS_Store",".sublime-snippet"));
 	<li id="<?php echo $f;  ?>">
 	<input type="checkbox" value="<?php echo $f  ?>" name="snippet-file[]" id="snippet-file-<?php echo $f; ?>"/><label for="snippet-file-<?php echo $f; ?>" class="forcheckbox "> </label>
 	<a href="snippets/<?php echo $value; ?>" download="<?php echo $value;  ?>" class=" bt-snippet-dl"><i class="glyphicon glyphicon-floppy-disk"></i></a>
-		<a href="snippets/<?php echo $value; ?>" data-filename="<?php echo $f;?>" data-fileext="<?php echo $f;?>" class="snippet-edit c-7"><?php echo $f; ?></a>
+		<a href="<?php echo WEB_SNIPPETS."/".$value; ?>" data-filename="<?php echo $f;?>" data-fileext="<?php echo $f;?>" class="snippet-edit c-7"><?php echo $f; ?></a>
 	</li>
 <?php endforeach ?>
 

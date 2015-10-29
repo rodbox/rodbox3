@@ -1,0 +1,39 @@
+{
+    "_tool_": {
+        "Toto": "toto en francais ce dit toto",
+        "Tool": "Tool en francais ce dit Outil"
+    },
+    "adminmaster": null,
+    "app": null,
+    "appfile": null,
+    "appinfo": null,
+    "colors": null,
+    "docmaker": null,
+    "localsearch": null,
+    "paper": null,
+    "ressources": null,
+    "snippet": null,
+    "test": {
+        "msg": "un message depuis l'interface de d\u00e9veloppement."
+    },
+    "user": {
+        "req": "Champ requis",
+        "mail": "Adresse mail non valide",
+        "int": "Doit \u00eatre un entier",
+        "reg": "Ne correspond pas \u00e0 l'expression ",
+        "alpha_num": "Doit \u00eatre un alpha num\u00e9rique",
+        "min": "<strong>[VALUE]<\/strong> caract\u00e8res minimum",
+        "max": "<strong>[VALUE]<\/strong> caract\u00e8res maximum",
+        "equal": "Valeur non identique \u00e0 <strong>[VALUE]<\/strong>",
+        "url": "Url non valide",
+        "ip": "Adress IP non valide",
+        "tel": "Num\u00e9ro de t\u00e9l\u00e9phone non valide",
+        "userLabel": "Nom d'utilisateur",
+        "userLastnameLabel": "Nom de famille",
+        "userFirstnameLabel": "Pr\u00e9nom",
+        "userCivLabel": "Civilit\u00e9",
+        "userPasswordLabel": "Votre mot de passe",
+        "userPasswordConfirmLabel": "Confirmez votre mot de passe",
+        "userMailLabel": "Email"
+    }
+}

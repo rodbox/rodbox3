@@ -1,12 +1,112 @@
 {
+    "routeService": [
+        "adminmaster",
+        "adminmasterController",
+        "compile_route"
+    ],
+    "appService": [
+        "adminmaster",
+        "adminmasterController",
+        "select_app"
+    ],
+    "pluploadService": [
+        "app",
+        "appController",
+        "plupload"
+    ],
+    "eventRemoveService": [
+        "app",
+        "calendarController",
+        "eventRemove"
+    ],
+    "getPalettesListService": [
+        "colors",
+        "colorsController",
+        "getPalettesList"
+    ],
+    "getDocListService": [
+        "docmaker",
+        "docmakerController",
+        "getDocList"
+    ],
     "userService": [
         "user",
         "userController",
         "userMenu"
     ],
+    "userSkypeService": [
+        "user",
+        "userController",
+        "userSkype"
+    ],
     "ifuserService": [
         "user",
         "userController",
         "evalUser"
+    ],
+    "userIdentityService": [
+        "user",
+        "userController",
+        "userIdentity",
+        "id"
+    ],
+    "userContactService": [
+        "user",
+        "userController",
+        "userContact",
+        "id"
+    ],
+    "userFriendService": [
+        "user",
+        "userController",
+        "userFriend",
+        "id"
+    ],
+    "userImgService": [
+        "user",
+        "userController",
+        "userImg",
+        "id"
+    ],
+    "userExistService": [
+        "user",
+        "userController",
+        "userExist",
+        "User"
+    ],
+    "userMailExistService": [
+        "user",
+        "userController",
+        "userMailExist",
+        "UserMail"
+    ],
+    "userLoginService": {
+        "0": "user",
+        "1": "userController",
+        "2": "userLogin",
+        "3": "UserMail",
+        "5": "userpasseword"
+    },
+    "roleListService": [
+        "user",
+        "userController",
+        "roleList",
+        "role"
+    ],
+    "formSetRoleService": [
+        "user",
+        "userController",
+        "formSetRole",
+        "id"
+    ],
+    "contactListService": [
+        "user",
+        "userController",
+        "contactList"
+    ],
+    "cropImgService": [
+        "user",
+        "userController",
+        "cropImg"
     ]
 }

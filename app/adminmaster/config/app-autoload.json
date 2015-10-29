@@ -1,0 +1,51 @@
+{
+    "adminmaster_page_index": {
+        "init": {
+            "lib": []
+        },
+        "js": {
+            "adminmaster": ["app"]
+        },
+        "css": {
+            "adminmaster": ["style"]
+        }
+    },
+    "adminmaster_page_user": {
+        "init": {
+            "lib": []
+        },
+        "js": {
+            "adminmaster": ["app"]
+        },
+        "css": {
+            "adminmaster": ["style"]
+        }
+    },
+    "adminmaster_page_translate": {
+        "init": {
+            "lib": []
+        },
+        "js": {
+            "adminmaster": [
+                "app",
+                "jquery-app"
+            ]
+        },
+        "css": {
+            "adminmaster": ["style"]
+        }
+    },
+    "adminmaster_page_log": {
+        "init": {
+            "lib": []
+        },
+        "js": {
+            "adminmaster": [
+                "app"
+            ]
+        },
+        "css": {
+            "adminmaster": ["style"]
+        }
+    }
+}

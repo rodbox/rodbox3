@@ -1,0 +1,39 @@
+{
+    "_tool_": {
+        "Toto": "Toto is toto",
+        "Tool": "Outil in english it's Tool"
+    },
+    "adminmaster": null,
+    "app": null,
+    "appfile": null,
+    "appinfo": null,
+    "colors": null,
+    "docmaker": null,
+    "localsearch": null,
+    "paper": null,
+    "ressources": null,
+    "snippet": null,
+    "test": {
+        "msg": "A message from developpement interface"
+    },
+    "user": {
+        "req": "required",
+        "mail": "Email not valid",
+        "int": "Must be int",
+        "reg": "Not same like",
+        "alpha_num": "Must be alpha numeric",
+        "min": "[VALUE] minimum caracters",
+        "max": "[VALUE] maximum caracters",
+        "equal": "Must be the same value like [VALUE]",
+        "url": "URL isn't valid",
+        "ip": "IP Adress not valid",
+        "tel": "Phone number isn't valid",
+        "userLabel": "Username",
+        "userLastnameLabel": "Lastname",
+        "userFirstnameLabel": "Firstname",
+        "userCivLabel": "Civ",
+        "userPasswordLabel": "Password",
+        "userPasswordConfirmLabel": "Password confirm",
+        "userMailLabel": "Email"
+    }
+}

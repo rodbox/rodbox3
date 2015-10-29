@@ -103,17 +103,26 @@ $("body").appView("appfile","circle-menu");
 	$(document).on("click",".star",function (e){
 		e.preventDefault();	
 		var t = $(this);
-		var cursor = editor.listSelections();
+		var selection = editor.getSelection();
 
-		var from = cursor[0].head;
-		var to = cursor[0].anchor;
+		$(".form-msg").show().css({
+			left:e.pageX,
+			top:e.pageY
+		});
+		$('#item-addmsg').val(selection);
+		$('#item-addmsgID').val(parseInt($('#item-addmsgID').val())+1);
+		toggleMouseMenu();
 
-		// editor.addLineClass(from.line, "mark gutter","mark-gutter");
-		editor.setGutterMarker(from.line, "mark-gutterID","mark-gutter");
+		console.log(e);
 
-		console.log(editor.lineInfo(from.line));
+		console.log(selection);
 	})
-
+	$('form.form-addmsg').appLiveForm({
+		callback:function (json,t){
+			$(".form-msg").hide();
+		}
+	});
+	$('.form-msg').draggable();
 
 
 	

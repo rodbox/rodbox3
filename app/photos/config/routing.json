@@ -1,0 +1,22 @@
+{
+    "photos_page_index": [
+        "photos",
+        "index",
+        "page",
+        [
+            "USER",
+            "ADMIN",
+            "EDITOR",
+            "MASTER"
+        ]
+    ],
+    "photos_exec_resize-folder": [
+        "photos",
+        "resize-folder",
+        "exec",
+        [
+            "EDITOR",
+            "MASTER"
+        ]
+    ]
+}

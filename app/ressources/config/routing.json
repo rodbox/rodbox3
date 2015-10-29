@@ -2,31 +2,49 @@
     "ressources_page_index": [
         "ressources",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
     ],
     "ressources_exec_addanim": [
         "ressources",
         "addanim",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "ressources_exec_additem": [
         "ressources",
         "additem",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "ressources_exec_list-anim": [
         "ressources",
         "list-anim",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "ressources_exec_list": [
         "ressources",
         "list",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "ressources_exec_uploadanim": [
         "ressources",
         "uploadanim",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ]
 }

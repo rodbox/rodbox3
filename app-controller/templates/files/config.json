@@ -1,6 +1,5 @@
 {
-	'title' : '[title]',
-	'page'	:	{
-		'index' : 'menu-right'
+	"[ROUTE]":{
+		"title":""
 	}
 }

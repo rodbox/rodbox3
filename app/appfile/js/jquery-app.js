@@ -28,7 +28,17 @@ requiered = jquery-appinfo.js
         var url = t.attr("href");
 
         $.post(url, function(data) {
-
+          /* Si il y a une erreur */
+          if(data.infotype == "error"){
+                    param.appInfo = $.appInfo.add({
+                        type  : "error",
+                        title : this.selector,
+                        msg   : data.msg,
+                        open  : true,
+                        msgmeta:data.msgmeta,
+                        timer : 0
+                    });
+                  }
           param.list = listMaker(data.data.filelist,"");
           if(t.data("auto-open"))
             param.autoOpenFile = t.data("auto-open");
@@ -40,8 +50,8 @@ requiered = jquery-appinfo.js
           /*** FOLDER MENU **/
           /* http://blog.rodbox.fr/rodbox-appview-charger-une-view/ */
           $('#app-sidebar').appView("appfile","folder-menu",{},{
-            callback:function(html,t){
-              t.append(html);
+            callback:function(json,t){
+              t.append(json);
               $(".file-create").appLiveForm({
                 callback : function (json,t){
                   $("a.fileservice").nextAll("ul.file-list").first().append(json.data);
@@ -64,6 +74,8 @@ requiered = jquery-appinfo.js
 
             param.list.find('a[data-location$="'+autoOpenFile+'"]').trigger("click");
           }
+
+
 
           
         

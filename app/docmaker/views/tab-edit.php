@@ -1,6 +1,6 @@
 <ul class="no-padh maxH">
 	<li>
-		<?php  paletteList("","bg-8 c-4");?>
+		<?php  $c->service("getPalettesList");?>
 	</li>
 	<li>
 		<label for="styleCss" class="block codemirror" data-mode="css">Styles</label>

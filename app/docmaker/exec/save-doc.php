@@ -1,5 +1,5 @@
 <?php 
-$dir = realpath("../models");
+$dir = DIR_DOC;
 
 if($_POST["new-file"]!="") {
 	$_POST["models"] = $_POST["new-file"];
@@ -19,7 +19,7 @@ if($_POST["new-file"]!="") {
 	            'data'=>["new"=>$new,"models"=>$_POST["new-file"]]
 	        );
 
-	echo json_encode($r);
+
 }
 else {
 	$r = array(
@@ -27,7 +27,6 @@ else {
 	            'msg'=>"Vous devez saisir un nom de fichier",
 	            'data'=>''
 	        );
-	
-	echo json_encode($r);
+
 }
 ?>

@@ -1,0 +1,154 @@
+@portletMarg : 20;
+@portletPad :5;
+@portletTitleH : 40;
+@portletFooterH : 40;
+@portletLine : 3;
+@portletH : 600;
+
+/*** PORTLET ***/
+.portlet{
+
+  &{
+ 
+    padding: unit(@portletPad,px);
+    margin-left: -5px;
+    margin-bottom: unit(@portletMarg,px);
+    margin-right: -5px;
+
+
+    
+  }
+  &,
+  &.default{
+    background-color: extract(@colors,7);
+      .caption {
+        color:extract(@colors,2)
+    }
+
+  }
+
+  &.inverse{
+    background-color: extract(@colors,4);
+    .caption {
+      color:extract(@colors,2)
+    }
+  }
+  .portlet-title{
+
+      
+      padding:7px 15px; 
+      background-color: extract(@colors,4);
+    height: unit(@portletTitleH,px);
+    .caption {
+      .big;
+      .strong;
+      .inline-block;
+      & i {
+        .normal;
+        .small;
+      }
+      & .caption-helper{
+        .small;
+        .light;
+      }
+    }
+    .actions {
+      float: right;
+      .btn{
+        margin-top: 2px;
+      }
+      div{
+        display: inline;
+      }
+    }
+    border-bottom: 2px solid extract(@colors,4);
+  }
+
+  .portlet-footer{
+    height: unit(@portletFooterH,px);
+    vertical-align: middle !important;
+    display: none;
+
+  }
+  &.portlet-footer-active{
+    .portlet-footer{
+      display: block;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom:15px; 
+      background-color: extract(@colors,4);
+      &{
+        vertical-align: middle;
+        font-size: 0.8em !important;
+        line-height: 0.8em !important;
+        text-align: center;
+        & .bootstrap-select,
+        & input,
+        & button{
+          text-align: left;
+          margin-right: 5px !important;
+        }
+      }
+    }
+  }
+
+  .portlet-body{
+    clear:both;
+    // overflow-y: auto;
+    .overflow-touch;
+    
+  }
+
+  .portlet-line-loop (@i:1) when (@i <= @portletLine){
+    // Calcule de la part de taille fixe en par portlet
+        @fixeAlone : @portletTitleH + @portletMarg + (@portletPad * 2);
+
+        // Calcule de la part de taille fixe en fonction de la hauteur de ligne
+        @fixeCount : @fixeAlone * (@portletLine - (@i - 1)); 
+
+        // Hauteur du portlet-body quand le footer n'est pas actif
+        @H : (@portletH  - @fixeCount ) / (@portletLine - (@i - 1));
+        
+        // Hauteur du protlet-body quand le footer est actif
+        @HWithFooter : @H - @portletFooterH; 
+
+    &.line-@{i}{
+      .portlet-body{
+        height: unit(@H,px);
+      }
+      
+    }
+    &.portlet-fullscreen {
+        position: fixed;
+
+        .z-max-5;
+        top:0px;
+        left:0px;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0px !important;
+        .portlet-body{
+          height: calc(~"100% - 40px") !important;
+          overflow-y: auto;
+        }
+        &.portlet-footer-active{
+          .portlet-body{
+            height: calc(~"100% - 80px") !important;
+          }
+        }
+      }
+   
+    /* END Portlet fullscreen */
+
+    &.portlet-footer-active.line-@{i}{
+      .portlet-body{
+        height: unit(@HWithFooter,px);
+      }
+    }
+
+    .portlet-line-loop(@i + 1);
+  }
+
+  .portlet-line-loop();
+}
+/*** END PORTLET ***/

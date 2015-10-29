@@ -1,0 +1,136 @@
+{
+    "adminmaster_page_index": [
+        "adminmaster",
+        "index",
+        "page",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_page_user": [
+        "adminmaster",
+        "user",
+        "page",
+        [
+            "USER",
+            "ADMIN",
+            "EDITOR",
+            "GRAPH",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_compile_routes": [
+        "adminmaster",
+        "compile_routes",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_compile_services": [
+        "adminmaster",
+        "compile_services",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_create_route": [
+        "adminmaster",
+        "create_route",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_page_doctrine_test": [
+        "adminmaster",
+        "doctrine_test",
+        "page",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_page_log": [
+        "adminmaster",
+        "log",
+        "page",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_page_translate": [
+        "adminmaster",
+        "translate",
+        "page",
+        [
+            "ADMIN",
+            "EDITOR",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_msg_save": [
+        "adminmaster",
+        "msg_save",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_compile_msg": [
+        "adminmaster",
+        "compile_msg",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_setRole_route": [
+        "adminmaster",
+        "setRole_route",
+        "exec"
+    ],
+    "adminmaster_exec_create_service": [
+        "adminmaster",
+        "create_service",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_clearlog": [
+        "adminmaster",
+        "clearlog",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_refreshlog": [
+        "adminmaster",
+        "refreshlog",
+        "exec",
+        [
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_scan_msg": [
+        "adminmaster",
+        "scan_msg",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ]
+}

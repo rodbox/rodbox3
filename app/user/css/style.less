@@ -1,23 +1,99 @@
-label{
-	display: block;
-	margin-top: 15px;
-}
-input{
-	display: block;
-	margin-bottom: 15px;
-	padding: 5px;
-	width: 100%;
-	&[type=submit]{
-		margin-bottom: 0px;
-	}
-}
-div.radio {
-	display: inline-table;
-	width: 65px;margin: 0px;
+@import "../../app/css/var.less";
+@import "../../app/css/grid.less";
+@import "../../app/css/colors.less";
+@import "../../app/css/form.less";
+@import "../../app/css/import.less";
+
+
+
+body {
+    background-color: #323232 !important;
+    background-image: none !important;
 }
 
-.msg-info{
-	padding: 25px;
-	background-color: #ececec;
-	margin-bottom: 25px;
+
+
+
+#user-identity-upload{
+  div{
+    canvas{
+      position: absolute;
+
+      margin-left: -175px;
+    }
+  }
+#user_exec_upload_img-plupload-browse{
+
+  margin-left: -75px;
+  position: absolute !important;
+}
+}
+.plupload-drop-zone{
+  position: absolute;
+  z-index: 1600;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  // width: 100%;
+  background-color: rgba(255,255,255,0.2);
+  left: calc(~"50% - 75px") !important;
+  margin-top: 25px;
+  .radius;
+  .animate();
+  opacity: 0.5;
+   &:hover{
+    opacity: 1;    
+  }
+  a{
+    line-height: 150px;
+    display: inline-block;
+    font-size: 3em;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.2;
+  .animate();
+  &:hover{
+    opacity: 1;    
+  }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.user-img{
+  margin-top: 25px;  
+}
+
+
+
+
+
+
+
+
+
+
+.cropper{
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+}
+
+.handraw-help{
+  font-family: "frente";
+  font-size: 2em;
+  margin-top: -25px;
+  margin-right: -0px;
+  position: absolute;
+  .rotate(-25);
 }

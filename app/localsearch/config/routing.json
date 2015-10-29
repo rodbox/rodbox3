@@ -2,6 +2,9 @@
     "localsearch_page_index": [
         "localsearch",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
     ]
 }

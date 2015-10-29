@@ -34,7 +34,7 @@ $(document).ready(function(){
 		if (editor.isClean()) {
 			editor.setValue("");
 			editor.markClean();
-			$('#select-models').val("");
+			$('#doc-list').val("");
 			$('#new-file').val("");
 			$('#iframe-preview').attr("src","");
 		}
@@ -42,8 +42,8 @@ $(document).ready(function(){
 			if(confirm("enregistrer les modifs")){
 				editor.setValue("");
 				editor.markClean();
-				t.attr("data-open",$('#select-models').val(""));
-				$('#select-models').val("");
+				t.attr("data-open",$('#doc-list').val(""));
+				$('#doc-list').val("");
 				$('#iframe-preview').attr("src","");
 			}
 		}
@@ -57,8 +57,8 @@ $(document).ready(function(){
 		callback:function(json,t){
 			if (json.data.new) {
 				var option = $("<option>",{"value":"models"}).html(json.data.models);
-				$('#select-models').append(option)
-				$('#select-models').val(json.data.models);
+				$('#doc-list').append(option)
+				$('#doc-list').val(json.data.models);
 			};
 			editor.markClean();
 			$('#pdf-model').trigger('click');
@@ -71,7 +71,11 @@ $(document).ready(function(){
 		callback:function(json,t){
 			if (editor.isClean()) {
 				loadMeta(json.data);
-				t.attr("data-open",$('#select-models').val());
+				t.attr("data-open",json.data.models);
+
+				previewPdf(json.data.models);
+				
+
 				/* Code editor */
 				editor.setValue(json.data.myTextarea);
 				editor.markClean();
@@ -84,19 +88,19 @@ $(document).ready(function(){
 
 				editorFooter.markClean();				
 				editorFooter.setValue(json.data.docFooter);
-				$('#pdf-model').trigger('click');
+				// $('#pdf-model').trigger('click');
 			}
 			else{
 				if(confirm("enregistrer les modifs")){
 					editor.setValue(json.data);
 					editor.markClean();
-					t.attr("data-open",$('#select-models').val());
+					t.attr("data-open",$('#doc-list').val());
 					
 					$('#pdf-model').trigger('click');
 				}
 				else{
-					$('#select-models').val(t.attr("data-open"));
-					$('#new-file').val($('#select-models').val());
+					$('#doc-list').val(t.attr("data-open"));
+					$('#new-file').val($('#doc-list').val());
 				}
 			}
 		}
@@ -105,14 +109,23 @@ $(document).ready(function(){
 	/* Preview */
 	$(document).on("click","#pdf-model",function (e){
 		var t = $(this);
-		var model = $('#select-models').val();
-		var src = t.attr("href")+"?models="+model;
-		$('#iframe-preview').attr("src",src);
+		var model = $('#doc-list').val();
+		previewPdf(model)
+
 
 		return false;
 	})
-	
-	$(document).on("change",'#select-models',function (e){
+
+
+	function previewPdf(model){
+		var src = $.routeExec("docmaker_exec_pdf-doc",{"doc-list":model});
+		console.log(src);
+		$('#iframe-preview').attr("src",src);
+	}
+
+
+	$(document).on("change",'#doc-list',function (e){
+
 		$('#open-model').trigger('click');
 	})
 
@@ -206,27 +219,11 @@ $(document).ready(function(){
 	    docFooter.save();
 	});
 
-	 
-
-
-
-
-
-
-
 	/*LES INCLUDES AVEC $.getScript(); */
 	window.editor = editor;
-	$.getScript("js/app-codemirror-circlemenu.js",function(editor){
+	$.getScript("../app/docmaker/js/app-codemirror-circlemenu.js",function(editor){
 
 	});
-
-
-
-
-
-
-
-
 
 
 });

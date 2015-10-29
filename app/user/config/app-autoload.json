@@ -1,0 +1,82 @@
+{
+	"user_page_login":{
+        "init":{
+            "lib":[
+                
+            ]
+        },
+        "js":{
+            "user":[
+                "app"
+            ]
+        },
+        "css":{
+            "user":[
+                "style"
+            ]
+        }
+    },
+    "user_page_edit":{
+        "init":{
+            "lib":[
+                "plupload",
+                "cropper"
+            ]
+        },
+        "js":{
+            "user":[
+                "app",
+                "cropper-init"
+            ]
+        },
+        "css":{
+            "user":[
+                "style",
+                "circle-menu"
+            ]
+        }
+    },
+    "user_page_index":{
+		"init":{
+			"lib":[
+            	
+        	]
+		},
+        "js":{
+        	"user":[
+        		"app"
+        	]
+        },
+        "css":{
+        	"user":[
+        		"style"
+        	]
+        }
+	},
+    "user_exec_sendmail": {
+        "init":{
+            "lib":[
+            
+            ],
+            "js":[
+
+            ],
+            "css":[
+
+            ]
+        }
+    },
+    "user_exec_addContact": {
+        "init":{
+            "lib":[
+            
+            ],
+            "js":[
+
+            ],
+            "css":[
+
+            ]
+        }
+    }
+}

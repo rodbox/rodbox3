@@ -131,6 +131,6 @@ function errorManagerExec($errno, $errstr, $errfile, $errline, $errcontext)
 /* gestion de présentation des erreurs */
 
 	function editFileLink($dir,$line=1){
-		return "<a href='".WEB_FILE_EDITOR."?file=".$dir."&line=".$line."' target='_blank'>".$dir."</a>";
+		return "<a href='".WEB_FILE_EDITOR."&file=".$dir."&line=".$line."' target='_blank'>".$dir."</a>";
 	}
  ?>

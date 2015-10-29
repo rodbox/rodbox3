@@ -45,6 +45,9 @@ h1 {
   margin: 0px;
   color: #ebe8e6 !important;
 }
+.nav-tabs {
+  border-bottom: 0px;
+}
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {

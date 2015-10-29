@@ -1,1 +1,1 @@
-<?php  include('views/ressources-list.php');?>
+<?php $c->view('docmaker','ressources-list');?>

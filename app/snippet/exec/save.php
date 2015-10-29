@@ -1,44 +1,31 @@
 <?php 
-function replace_Key_Val_File($data, $fileModel, $fileDest = "") {
-        foreach ($data as $key => $val) {
-            $find[] = "[" . $key . "]";
-            $replace[] = $val;
-        }
-        $contentModel   = file_get_contents($fileModel,true);
-        $content        = str_replace($find, $replace, $contentModel);
-        if($fileDest != "")
-            file_put_contents($fileDest, $content);
-        else
-            return $content;
-    }
+$appAutoload->mod("template");
 
 extract($_POST);
 extract($_GET);
 
-$file = $snippetName.".sublime-snippet";
-$url = "snippets/".$file;
+$template = new template;
+
+$templateFile = "snippet.sublime-snippet";
+$filename = $snippetName;
+
 
 $replace = array(
 	"TRIGGER" 	=> isset($trigger)?$trigger:"",
-	"CONTENT"	=> isset($content)?$content:"",
+	"CONTENT"	=> isset($myTextarea)?$myTextarea:"",
 	"DESC"		=> isset($desc)?$desc:"",
     "TYPE"      => isset($type)?$type:"",
 	"CATEGORY"	=> isset($category)?$category:"",
 	);
 
 
-
-$dirSave =  realpath("..")."/".$url;
-$dirTemplate =  realpath("..")."/templates/snippet.sublime-snippet";
-
-replace_Key_Val_File($replace,$dirTemplate, $dirSave);
+$template->templateFile($templateFile,DIR_SNIPPETS, $filename,$replace,true);
 
 $r = array(
             'infotype'=>"success",
-            'msg'=>"ok",
-            'data'=>['name'=>$snippetName,'url'=>$url,'file'=>$file]
+            'msg'=>"Snippet enregistré",
+            'data'=>['name'=>$snippetName,'url'=>WEB_SNIPPETS."/".$filename,'file'=>$filename]
         );
 
-echo json_encode($r);
 ?>
 

@@ -2,37 +2,58 @@
     "docmaker_page_index": [
         "docmaker",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_create-doc": [
         "docmaker",
         "create-doc",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_edit-doc": [
         "docmaker",
         "edit-doc",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_pdf-doc": [
         "docmaker",
         "pdf-doc",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_save-doc": [
         "docmaker",
         "save-doc",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_style": [
         "docmaker",
         "style",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_tmp-5eb8574b": [
         "docmaker",
         "tmp-5eb8574b",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_tmp-8cbf7b17": [
         "docmaker",

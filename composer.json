@@ -2,7 +2,11 @@
   "require": {
 		"doctrine/doctrine-fixtures-bundle": "~2.2",
         "doctrine/orm": "2.4.*",
-        "symfony/yaml": "2.*"
+        "symfony/yaml": "2.*",
+        "swiftmailer/swiftmailer": "@stable",
+        "phpoffice/phpexcel": "dev-master",
+        "imagine/imagine": "dev-master",
+        "leafo/lessphp": "0.4.*@dev"
     },
     "autoload": {
         "psr-0": {"": "src/"}

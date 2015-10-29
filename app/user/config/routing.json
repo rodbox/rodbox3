@@ -2,36 +2,142 @@
     "user_page_index": [
         "user",
         "index",
-        "page"
+        "page",
+        [
+            "FREE"
+        ]
     ],
     "user_page_login": [
         "user",
         "login",
-        "page"
+        "page",
+        [
+            "FREE"
+        ]
     ],
     "user_exec_login": [
         "user",
         "login",
-        "exec"
+        "exec",
+        [
+            "FREE"
+        ]
     ],
     "user_exec_create": [
         "user",
         "create",
-        "exec"
+        "exec",
+        [
+            "FREE"
+        ]
     ],
     "user_exec_logout": [
         "user",
         "logout",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "user_exec_upd": [
         "user",
         "upd",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "user_page_edit": [
         "user",
         "edit",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
+    ],
+    "user_exec_sendmail": [
+        "user",
+        "sendmail",
+        "exec",
+        [
+            "USER"
+        ]
+    ],
+    "user_exec_addContact": [
+        "user",
+        "addContact",
+        "exec",
+        [
+            "USER"
+        ]
+    ],
+    "user_exec_removeContact": [
+        "user",
+        "removeContact",
+        "exec",
+        [
+            "USER"
+        ]
+    ],
+    "user_exec_set_role": [
+        "user",
+        "set_role",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "user_exec_upload_img": [
+        "user",
+        "upload_img",
+        "exec",
+        [
+            "USER"
+        ]
+    ],
+    "user_exec_get_events": [
+        "user",
+        "get_events",
+        "exec",
+        [
+            "USER"
+        ]
+    ],
+    "user_exec_set_events": [
+        "user",
+        "set_events",
+        "exec",
+        [
+            "USER",
+            "MASTER"
+        ]
+    ],
+    "user_exec_rotate_img": [
+        "user",
+        "rotate_img",
+        "exec",
+        [
+            "USER",
+            "MASTER"
+        ]
+    ],
+    "user_view_crop_img": [
+        "user",
+        "crop_img",
+        "view",
+        [
+            "USER",
+            "MASTER"
+        ]
+    ],
+    "user_exec_crop_img": [
+        "user",
+        "crop_img",
+        "exec",
+        [
+            "USER",
+            "MASTER"
+        ]
     ]
 }

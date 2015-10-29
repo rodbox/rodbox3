@@ -2,21 +2,33 @@
     "colors_page_index": [
         "colors",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
     ],
     "colors_exec_export-palette": [
         "colors",
         "export-palette",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "colors_exec_png-palette": [
         "colors",
         "png-palette",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "colors_exec_save-palette": [
         "colors",
         "save-palette",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ]
 }

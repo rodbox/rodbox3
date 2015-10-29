@@ -1,6 +1,6 @@
 <?php 
-$autoload = new autoload;
-$autoload->mod("file");
+$appAutoload = new appAutoload;
+$appAutoload->mod("file");
 
 $dir 	= DIR_PALETTES;
 

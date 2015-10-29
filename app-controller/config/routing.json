@@ -1,108 +1,357 @@
 {
+    "CV_page_index": [
+        "CV",
+        "index",
+        "page",
+        [
+            "FREE",
+            "MASTER"
+        ]
+    ],
     "_tool__page_index": [
         "_tool_",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
+    ],
+    "_tool__page_index-icon": [
+        "_tool_",
+        "index-icon",
+        "page",
+        [
+            "USER"
+        ]
+    ],
+    "adminmaster_page_index": [
+        "adminmaster",
+        "index",
+        "page",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_page_user": [
+        "adminmaster",
+        "user",
+        "page",
+        [
+            "USER",
+            "ADMIN",
+            "EDITOR",
+            "GRAPH",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_compile_routes": [
+        "adminmaster",
+        "compile_routes",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_compile_services": [
+        "adminmaster",
+        "compile_services",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_create_route": [
+        "adminmaster",
+        "create_route",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_page_doctrine_test": [
+        "adminmaster",
+        "doctrine_test",
+        "page",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_page_log": [
+        "adminmaster",
+        "log",
+        "page",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_page_translate": [
+        "adminmaster",
+        "translate",
+        "page",
+        [
+            "ADMIN",
+            "EDITOR",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_msg_save": [
+        "adminmaster",
+        "msg_save",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_compile_msg": [
+        "adminmaster",
+        "compile_msg",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_setRole_route": [
+        "adminmaster",
+        "setRole_route",
+        "exec"
+    ],
+    "adminmaster_exec_create_service": [
+        "adminmaster",
+        "create_service",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_clearlog": [
+        "adminmaster",
+        "clearlog",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_refreshlog": [
+        "adminmaster",
+        "refreshlog",
+        "exec",
+        [
+            "MASTER"
+        ]
+    ],
+    "adminmaster_exec_scan_msg": [
+        "adminmaster",
+        "scan_msg",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "app_page_index": [
         "app",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
+    ],
+    "app_exec_calendar_upd": [
+        "app",
+        "calendar_upd",
+        "exec",
+        [
+            "USER",
+            "MASTER"
+        ]
+    ],
+    "app_view_event_edit": [
+        "app",
+        "event_edit",
+        "view",
+        [
+            "USER",
+            "MASTER"
+        ]
     ],
     "appfile_page_index": [
         "appfile",
         "index",
-        "page"
+        "page",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appfile_exec_create-app": [
         "appfile",
         "create-app",
-        "exec"
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appfile_exec_create": [
         "appfile",
         "create",
-        "exec"
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appfile_exec_edit": [
         "appfile",
         "edit",
-        "exec"
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appfile_exec_list": [
         "appfile",
         "list",
-        "exec"
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appfile_exec_remove": [
         "appfile",
         "remove",
-        "exec"
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appfile_exec_save": [
         "appfile",
         "save",
-        "exec"
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "appfile_exec_addmsg": [
+        "appfile",
+        "addmsg",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "appinfo_page_index": [
         "appinfo",
         "index",
-        "page"
+        "page",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
     ],
     "colors_page_index": [
         "colors",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
     ],
     "colors_exec_export-palette": [
         "colors",
         "export-palette",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "colors_exec_png-palette": [
         "colors",
         "png-palette",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "colors_exec_save-palette": [
         "colors",
         "save-palette",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_page_index": [
         "docmaker",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_create-doc": [
         "docmaker",
         "create-doc",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_edit-doc": [
         "docmaker",
         "edit-doc",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_pdf-doc": [
         "docmaker",
         "pdf-doc",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_save-doc": [
         "docmaker",
         "save-doc",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_style": [
         "docmaker",
         "style",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_tmp-5eb8574b": [
         "docmaker",
         "tmp-5eb8574b",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "docmaker_exec_tmp-8cbf7b17": [
         "docmaker",
@@ -117,161 +366,346 @@
     "localsearch_page_index": [
         "localsearch",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
     ],
     "paper_page_index": [
         "paper",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
     ],
     "paper_exec_compile-tools": [
         "paper",
         "compile-tools",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "paper_exec_edit-preset": [
         "paper",
         "edit-preset",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "paper_exec_edit-tool": [
         "paper",
         "edit-tool",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "paper_exec_save-preset": [
         "paper",
         "save-preset",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "paper_exec_save-tool": [
         "paper",
         "save-tool",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
+    ],
+    "photos_page_index": [
+        "photos",
+        "index",
+        "page",
+        [
+            "USER",
+            "ADMIN",
+            "EDITOR",
+            "MASTER"
+        ]
+    ],
+    "photos_exec_resize-folder": [
+        "photos",
+        "resize-folder",
+        "exec",
+        [
+            "EDITOR",
+            "MASTER"
+        ]
     ],
     "ressources_page_index": [
         "ressources",
         "index",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
     ],
     "ressources_exec_addanim": [
         "ressources",
         "addanim",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "ressources_exec_additem": [
         "ressources",
         "additem",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "ressources_exec_list-anim": [
         "ressources",
         "list-anim",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "ressources_exec_list": [
         "ressources",
         "list",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "ressources_exec_uploadanim": [
         "ressources",
         "uploadanim",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "snippet_page_index": [
         "snippet",
         "index",
-        "page"
+        "page",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_config-save": [
         "snippet",
         "config-save",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_del": [
         "snippet",
         "del",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_open": [
         "snippet",
         "open",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_pdf": [
         "snippet",
         "pdf",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_save": [
         "snippet",
         "save",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_upload": [
         "snippet",
         "upload",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_zip": [
         "snippet",
         "zip",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "test_page_index": [
         "test",
         "index",
-        "page"
+        "page",
+        [
+            "FREE"
+        ]
     ],
     "test_exec_save": [
         "test",
         "save",
-        "exec"
-    ],
-    "test_form_page_index": [
-        "test_form",
-        "index",
-        "page"
-    ],
-    "test_form_exec_test": [
-        "test_form",
-        "test",
-        "exec"
+        "exec",
+        [
+            "FREE"
+        ]
     ],
     "user_page_index": [
         "user",
         "index",
-        "page"
+        "page",
+        [
+            "FREE"
+        ]
     ],
     "user_page_login": [
         "user",
         "login",
-        "page"
+        "page",
+        [
+            "FREE"
+        ]
     ],
     "user_exec_login": [
         "user",
         "login",
-        "exec"
+        "exec",
+        [
+            "FREE"
+        ]
     ],
     "user_exec_create": [
         "user",
         "create",
-        "exec"
+        "exec",
+        [
+            "FREE"
+        ]
     ],
     "user_exec_logout": [
         "user",
         "logout",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "user_exec_upd": [
         "user",
         "upd",
-        "exec"
+        "exec",
+        [
+            "USER"
+        ]
     ],
     "user_page_edit": [
         "user",
         "edit",
-        "page"
+        "page",
+        [
+            "USER"
+        ]
+    ],
+    "user_exec_sendmail": [
+        "user",
+        "sendmail",
+        "exec",
+        [
+            "USER"
+        ]
+    ],
+    "user_exec_addContact": [
+        "user",
+        "addContact",
+        "exec",
+        [
+            "USER"
+        ]
+    ],
+    "user_exec_removeContact": [
+        "user",
+        "removeContact",
+        "exec",
+        [
+            "USER"
+        ]
+    ],
+    "user_exec_set_role": [
+        "user",
+        "set_role",
+        "exec",
+        [
+            "ADMIN",
+            "MASTER"
+        ]
+    ],
+    "user_exec_upload_img": [
+        "user",
+        "upload_img",
+        "exec",
+        [
+            "USER"
+        ]
+    ],
+    "user_exec_get_events": [
+        "user",
+        "get_events",
+        "exec",
+        [
+            "USER"
+        ]
+    ],
+    "user_exec_set_events": [
+        "user",
+        "set_events",
+        "exec",
+        [
+            "USER",
+            "MASTER"
+        ]
+    ],
+    "user_exec_rotate_img": [
+        "user",
+        "rotate_img",
+        "exec",
+        [
+            "USER",
+            "MASTER"
+        ]
+    ],
+    "user_view_crop_img": [
+        "user",
+        "crop_img",
+        "view",
+        [
+            "USER",
+            "MASTER"
+        ]
+    ],
+    "user_exec_crop_img": [
+        "user",
+        "crop_img",
+        "exec",
+        [
+            "USER",
+            "MASTER"
+        ]
     ]
 }

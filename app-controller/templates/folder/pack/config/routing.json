@@ -1,6 +1,10 @@
 {
-    "[APP]_index": [
+    "[APP]_page_index": [
         "[APP]",
-        "index"
+        "index",
+        "page",
+        [
+        	"MASTER"
+        ]
     ]
 }

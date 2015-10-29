@@ -1,1 +1,4 @@
-{}
+{
+	"pluploadService" : ["app","appController","plupload"],
+	"eventRemoveService" : ["app","calendarController","eventRemove"]
+}

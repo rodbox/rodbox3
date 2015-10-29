@@ -1,0 +1,34 @@
+{
+    "_tool__page_index": {
+        "init": {
+            "lib": []
+        },
+        "js": {
+            "_tool_": [
+                "app",
+                "color-convert"
+                ]
+        },
+        "css": {
+            "_tool_": [
+                "style"
+                ]
+        }
+    },
+    "_tool__page_index-icon": {
+        "init": {
+            "lib": []
+        },
+        "js": {
+            "_tool_": [
+                "app",
+                "app-localsearch"
+                ]
+        },
+        "css": {
+            "_tool_": [
+                "style"
+                ]
+        }
+    }
+}

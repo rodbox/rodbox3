@@ -2,41 +2,65 @@
     "snippet_page_index": [
         "snippet",
         "index",
-        "page"
+        "page",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_config-save": [
         "snippet",
         "config-save",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_del": [
         "snippet",
         "del",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_open": [
         "snippet",
         "open",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_pdf": [
         "snippet",
         "pdf",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_save": [
         "snippet",
         "save",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_upload": [
         "snippet",
         "upload",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ],
     "snippet_exec_zip": [
         "snippet",
         "zip",
-        "exec"
+        "exec",
+        [
+            "ADMIN"
+        ]
     ]
 }

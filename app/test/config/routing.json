@@ -2,11 +2,17 @@
     "test_page_index": [
         "test",
         "index",
-        "page"
+        "page",
+        [
+            "FREE"
+        ]
     ],
     "test_exec_save": [
         "test",
         "save",
-        "exec"
+        "exec",
+        [
+            "FREE"
+        ]
     ]
 }

@@ -1,0 +1,18 @@
+{
+    "adminmaster_page_indexRoute": "",
+    "adminmaster_page_userRoute": "",
+    "adminmaster_exec_compile_routesRoute": "",
+    "adminmaster_exec_compile_servicesRoute": "",
+    "adminmaster_exec_create_routeRoute": "",
+    "adminmaster_page_doctrine_testRoute": "",
+    "adminmaster_page_logRoute": "",
+    "adminmaster_page_translateRoute": "",
+    "adminmaster_exec_msg_saveRoute": "",
+    "adminmaster_exec_compile_msgRoute": "",
+    "adminmaster_exec_setRole_routeRoute": "",
+    "adminmaster_exec_create_serviceRoute": "",
+    "adminmaster_exec_clearlogRoute": "",
+    "adminmaster_exec_refreshlogRoute": "",
+    "adminmaster_exec_scan_msgRoute": "",
+    "adminmasterLabel": ""
+}

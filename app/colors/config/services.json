@@ -1,1 +1,5 @@
-{}
+{
+	"getPalettesListService":["colors","colorsController","getPalettesList"]
+
+
+}

@@ -1,0 +1,4 @@
+{
+	"routeService" : ["adminmaster","adminmasterController","compile_route"],
+	"appService" : ["adminmaster","adminmasterController","select_app"]
+}

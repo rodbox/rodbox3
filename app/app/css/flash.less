@@ -1,0 +1,74 @@
+@import "var.less";
+@import "function.less";
+@import "colors.less";
+@import "grid.less";
+@import "function.less";
+
+@containerW : 600;
+
+.flash-container{
+	position: fixed;
+	top:75px;
+	display: inline-block;
+	width: unit(@containerW,px);
+	left: calc(~"50% - 300px");
+	.flash{
+		
+		.animate();
+		
+		font-size: 1.2em;
+		vertical-align: middle;
+		p{
+			line-height: 64px;
+			margin-left: 64px;
+			vertical-align: middle;
+			opacity: 0.7;
+		}
+		&:before{
+				position: absolute;
+				font-size: 32px;
+				margin-left: 20px;
+				margin-top: 8px;
+				opacity: 0.7;
+			}
+		&.flash-info{
+			background-color: #196ca7;
+			color :#fff;
+			&:before{
+				font-family: "FontAwesome";content:"\f05a";
+			}
+		}
+
+		&.flash-error{
+			background-color: #dc3522;
+			color :#fff;
+			&:before{
+				font-family: "icomoon";content:"\ed4d";
+			}
+		}
+		&.flash-success{
+			background-color: #009e4d;
+			color :#fff;
+			&:before{
+				font-family: "icomoon";content:"\ed6f";
+			}
+		}
+		&.outro{
+			-moz-transform: scale(0.85);
+			-webkit-transform: scale(0.85);
+			-o-transform: scale(0.85);
+			-ms-transform: scale(0.85);
+			transform: scale(0.85);
+			opacity: 0;
+		}
+		a.close-flash{
+			position: absolute;
+			z-index: 1700;
+			top: 5px;
+			right: 10px;
+			font-size: 0.7em;
+					opacity:0.7 !important;
+				}
+	}
+	
+}

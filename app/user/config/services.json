@@ -1,4 +1,16 @@
 {
 	"userService" : ["user","userController","userMenu"],
-	"ifuserService" : ["user","userController","evalUser"]
+	"userSkypeService" : ["user","userController","userSkype"],
+	"ifuserService" : ["user","userController","evalUser"],
+	"userIdentityService" : ["user","userController","userIdentity","id"],
+	"userContactService" : ["user","userController","userContact","id"],
+	"userFriendService" : ["user","userController","userFriend","id"],
+	"userImgService" : ["user","userController","userImg","id"],
+	"userExistService" : ["user","userController","userExist","User"],
+	"userMailExistService" : ["user","userController","userMailExist","UserMail"],
+	"userLoginService" : ["user","userController","userLogin","UserMail","user","userpasseword"],
+	"roleListService" : ["user","userController","roleList","role"],
+	"formSetRoleService" : ["user","userController","formSetRole","id"],
+	"contactListService" : ["user","userController","contactList"],
+	"cropImgService" : ["user","userController","cropImg"]
 }

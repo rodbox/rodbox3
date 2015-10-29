@@ -1,1 +1,4 @@
-{}
+{
+	"getDocListService":["docmaker","docmakerController","getDocList"]
+
+}

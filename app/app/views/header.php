@@ -1,5 +1,5 @@
 <!-- START NAVBAR -->
-<nav class="navbar-default navbar navbar-fixed-top bg-2 z-max">
+<nav id="header" class="navbar-default navbar navbar-fixed-top z-max">
     <!-- START TOGGLE FOR MOBILE -->
     <div class="container-fluid">
         <!-- START TOGGLE FOR MOBILE -->

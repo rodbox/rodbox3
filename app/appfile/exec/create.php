@@ -1,5 +1,5 @@
 <?php
-	$autoload->mod("template");
+	$appAutoload->mod("template");
 
 	$tm = new template;
 extract($_POST);
@@ -15,7 +15,7 @@ if($file_type!="dir"){
 
 }
 else{
-	$eval = mkdir(DIR_ROOT2.$location."/".$file_create);
+	$eval = mkdir(DIR_ROOT."/".$location."/".$file_create);
 	$li = '<li class="search-show newfile" data-index="'.$location.'/'.$file_create.'" data-val="'.$file_create.'" data-dir="'.$location.'" data-type="folder">
 <a class="folder-link" href="'.$location.'/'.$file_create.'" data-location="'.$location.'/'.$file_create.'">'.$file_create.'</a>
 </li><ul  class="file-list" data-location="'.$location.'/'.$file_create.'"></ul>';
@@ -36,7 +36,7 @@ else{
         );
 
 }
-echo json_encode($r);
+
 
 
 ?>

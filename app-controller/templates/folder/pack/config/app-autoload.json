@@ -1,0 +1,17 @@
+{
+	"[APP]_page_index":{
+		"init":{
+			"lib":[]
+		},
+        "js":{
+        	"[APP]":[
+        		"app"
+        	]
+        },
+        "css":{
+        	"[APP]":[
+        		"style"
+        	]
+        }
+	}
+}

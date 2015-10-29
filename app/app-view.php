@@ -1,9 +1,13 @@
 <?php 
 	require_once("../app-controller/app-controller.php");
-    $autoload = new autoload();
+    $appAutoload = new appAutoload();
     $c = new controller();
 
 	set_error_handler('errorManagerExec');
 
-	$c->view($_POST['app'],$_POST['view']);
+	extract($_POST);
+	extract($_GET);
+
+
+	$c->view($app,$view);
 ?>

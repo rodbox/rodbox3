@@ -1,0 +1,22 @@
+{
+	"appinfo_page_index":{
+		"init":{
+			"lib":[
+            	""
+        	]
+		},
+        "js":{
+        	"appinfo":[
+        		"app",
+                "jquery-appinfo",
+                "demo"
+        	]
+        },
+        "css":{
+        	"appinfo":[
+        		"style",
+                "jquery-appinfo"
+        	]
+        }
+	}
+}

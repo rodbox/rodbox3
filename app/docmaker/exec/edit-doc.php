@@ -1,14 +1,13 @@
 <?php 
-$dir = realpath("../models");
-$jsonDir = $dir.'/'.$_POST["models"].'/'.$_POST["models"].'.json';
+$dir = DIR_DOC;
+$jsonDir = $dir.'/'.$_POST["doc-list"].'/'.$_POST["doc-list"].'.json';
 
-$json = json_decode(file_get_contents($jsonDir),true);
+
+$json = $c->getJson($jsonDir);
 
 $r = array(
             'infotype'=>"success",
             'msg'=>"ok",
             'data'=>$json
         );
-
-echo json_encode($r);
  ?>

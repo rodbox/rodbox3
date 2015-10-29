@@ -1,6 +1,6 @@
 <?php 
-	$configFile = file_get_contents("../config.json");  
-	$config = json_decode($configFile,true);
+	
+	$config = $c->getJson(DIR_SNIPPETS_CONFIG);
 ?>
 <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>

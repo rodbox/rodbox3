@@ -1,7 +1,7 @@
 <?php
 $error = array();
 
-$autoload->mod("template");
+$appAutoload->mod("template");
 
 extract($_POST);
 
@@ -12,15 +12,16 @@ $dest = DIR_APP;
 $newDest = $dest."/".$appName;
 $replace = [
 	"CLASSNAME"=>$appName,
-	"APP"=>ucfirst($appName),
+	"APP"=>$appName,
+	"APPUPPER"=>ucfirst($appName),
 	"PLUGIN_NAME"=>$appName,
 	"DESCRIPTION"=>$description,
 	"APP_TITLE"=>$appName
 	];
 $rename = [
-	$newDest."/controller.php"=>$newDest."/".$appName."-controller.php",
-	$newDest."/form/form.php"=>$newDest."/form/form".$appName.".php",
-	$newDest."/js/jquery-app.js"=>$newDest."/js/jquery-".$appName.".js"
+	$newDest."/controller.php"	=> $newDest."/".$appName."-controller.php",
+	$newDest."/form/form.php"	=> $newDest."/form/form".$appName.".php",
+	$newDest."/js/jquery-app.js"=> $newDest."/js/jquery-".$appName.".js"
 ];
 
 

@@ -1,0 +1,14 @@
+.img-preview {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  border: 3px solid transparent;
+  opacity: 0.5;
+}
+.onCur {
+  opacity: 1;
+  border: 3px solid #fff;
+}
+#range {
+  display: inline-block;
+}

@@ -46,11 +46,11 @@
 		</div>
 		
 		<?php 
-		$json = file_get_contents('config.json');
-		$configCat = json_decode($json,true);  ?>
+		
+		$configCat = $c->getJson(DIR_SNIPPETS_CONFIG); ?>
 
 		<div class="form-group "><label for="category" class="">Categories</label>
-			<select name="category" data-config='<?php echo $json;  ?>' id="category" class="form-control border-preview">
+			<select name="category" data-config='' id="category" class="form-control border-preview">
 			<?php foreach ($configCat["category"] as $key => $value): ?>
 			<option value="<?php echo $key;  ?>" ><?php echo $key;  ?></option>
 		<?php endforeach ?>

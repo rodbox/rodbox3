@@ -208,7 +208,7 @@ div.input-group-localsearch{
 .meta{
 	position: absolute;
 	margin-top: -3px;
-	.z-max;
+	z-index: 1040;
 	width: 100%;
 }
 
@@ -383,4 +383,23 @@ dl{
 	}
 
 }
+.form-msg{
+		background-color: rgba(36,36,36,0.9);
+	.btn,
+	.form-control{
+		display: inline-block !important;
+		background-color: rgba(255,255,255,0.1);
+		.no-border;
+		color: #fff;
+	}
+	.w-50{
+		width: calc(~"50% - 2px");
+		display: inline-block;
+	}
+	padding:10px;
+	width: 350px;
+	display: none;
+	.z-max-5;
+	.fixed;
 
+}

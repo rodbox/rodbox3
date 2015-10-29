@@ -1,16 +1,27 @@
 <?php 
+session_start();
 require_once("../app-controller/app-controller.php");
 
-    $autoload = new autoload();
+    // $appAutoload = new appAutoload();
     $c = new controller();
-	set_error_handler('errorManagerExec');
 
-	$dir = DIR_APP."/".$c->app."/exec/".$c->exec.".php";
+	set_error_handler('errorManager');
 	
-	if(require_once($dir)){
-	echo json_encode($r);
+
+	$r = $c->incRoute($_GET["route"]);
+	/* Si le fichier exec possede une clés response == false le retour json reste vide */
+	$r["response"] = (array_key_exists("response",$r))?$r["response"]:true;
+
+	if($r["response"]==="app" && array_key_exists("app",$r)){
+		echo $r['app'];
 	}
-	else{
-		echo "error exec";
+	else {
+		if($r["response"]){
+			set_error_handler('errorManagerExec');
+			if(isset($r))
+				echo json_encode($r);
+			else
+				trigger_error("Exec error");
+		}
 	}
 ?>

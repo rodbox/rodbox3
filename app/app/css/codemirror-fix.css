@@ -21,6 +21,15 @@
 .CodeMirror .CodeMirror-sizer {
   padding: 15px;
 }
+.CodeMirror .CodeMirror-scroll {
+  overflow: auto;
+  height: auto;
+  /* This is needed to prevent an IE[67] bug where the scrolled content
+	     is visible outside of the scrolling box. */
+  position: relative;
+  outline: none;
+  height: 100%;
+}
 .cm-s-twilight .CodeMirror-selected {
   background-color: rgba(255, 255, 255, 0.1) !important;
   z-index: 999;

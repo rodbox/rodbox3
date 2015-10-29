@@ -1,0 +1,34 @@
+{
+	"docmaker_page_index":{
+        "init":{
+            "lib":[
+                "codemirror"
+            ]
+        },
+        "js":{
+            "docmaker":[
+                "app",
+                "app-codemirror"
+            ]
+        },
+        "css":{
+            "docmaker":[
+                "style",
+                "app-circlemenu"
+            ]
+        }
+    },
+    "docmaker_exec_pdf-doc":{
+		"init":{
+			"lib":[
+            	"tcpdf"
+        	]
+		},
+        "js":{
+        	"docmaker":[]
+        },
+        "css":{
+        	"docmaker":[]
+        }
+	}
+}

@@ -8,7 +8,7 @@
             <p class="well">font-family: FontAwesome;</p>
         </div>
         <h3>Fontawesome Icons</h3>
-        <?php  include('views/icon-list-fa.php');?>
+        <?php  $c->view('_tool_','icon-list-fa');?>
     </div>
     <div id="tab_1_2" class="tab-pane glyphicons-demo">
         <div class="note note-success">
@@ -21,7 +21,7 @@
             <p class="well">font-family: "Glyphicons Halflings";</p>
         </div>
         <h3>Glyphicons</h3>
-        <?php  include('views/icon-list-bootstrap.php');?>
+        <?php  $c->view('_tool_','icon-list-bootstrap');?>
     </div>
     <div id="tab_1_3" class="tab-pane">
         <div class="note note-success">
@@ -32,7 +32,7 @@
             <p class="well">font-family: "Simple-Line-Icons";</p>
         </div>
         <h3>Simpleline icons</h3>
-        <?php  include('views/icon-list-simpleline.php');?>
+        <?php  $c->view('_tool_','icon-list-simpleline');?>
     </div>
     <div id="tab_1_4" class="tab-pane">
         <div class ="note">
@@ -41,7 +41,7 @@
             <p class="well">font-family: "icomoon";</p>
         </div>
         <h3>Ico moon </h3>
-        <?php  include('views/icon-list-icomoon.php');?>
+        <?php  $c->view('_tool_','icon-list-icomoon');?>
     </div>
    
 </div>

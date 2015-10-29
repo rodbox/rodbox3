@@ -1,0 +1,20 @@
+{
+    "req": "Los campos obligatorios",
+    "mail": "",
+    "int": "Debe ser un entero",
+    "reg": "",
+    "alpha_num": "",
+    "min": "",
+    "max": "",
+    "equal": "",
+    "url": "",
+    "ip": "",
+    "tel": "",
+    "userLabel": "",
+    "userLastnameLabel": "",
+    "userFirstnameLabel": "",
+    "userCivLabel": "",
+    "userPasswordLabel": "",
+    "userPasswordConfirmLabel": "",
+    "userMailLabel": ""
+}
